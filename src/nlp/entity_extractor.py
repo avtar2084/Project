@@ -165,8 +165,8 @@ if __name__ == "__main__":
     
     # Test examples
     test_queries = [
-        "code review in conference room a, next week?",
-        "Let's have a standup meeting with the engineering team in Zoom",
+        "code review meeting on 14 July 2025",
+        "email by hr team about training",
         "Schedule an interview with Sarah Chen in Meeting Room",
         "emails from  james to sarah",
         # "Performance review with Maya Singh in Office"

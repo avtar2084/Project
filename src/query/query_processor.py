@@ -66,7 +66,9 @@ def process_query(user_query: str):
                     any(term_lower in r.lower() for r in item.get("recipients", [])) or
                     any(term_lower in c.lower() for c in item.get("cc", [])) or
                     term_lower in item.get("subject", "").lower() or
-                    term_lower in item.get("content", "").lower()):
+                    term_lower in item.get("topic", "").lower() or
+                    term_lower in item.get("team", "").lower() or
+                    term_lower in item.get("body", "").lower()):
                     matches.add(i)
             else:
                 if (any(term_lower in a.lower() for a in item.get("attendees", [])) or
@@ -199,7 +201,7 @@ def display_results(results, intent):
             print(f"Date: {item.get('timestamp', 'Unknown')}")
             if item.get('cc'):
                 print(f"CC: {', '.join(item.get('cc', []))}")
-            content = item.get('content', 'No content')
+            content = item.get('body', 'No content')
             print(f"Content: {content[:100]}{'...' if len(content) > 100 else ''}")
         else:
             print(f"Title: {item.get('title', 'No title')}")
