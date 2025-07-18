@@ -1,8 +1,11 @@
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning, module="dateparser")
+
 import dateparser
 from dateparser.search import search_dates
 from typing import Optional, Tuple, List, Union
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 
 
 class DateParser:
@@ -11,89 +14,350 @@ class DateParser:
         Initialize the DateParser.
 
         Args:
-            reference (datetime, optional): Reference date for relative parsing (e.g., for testing).
+            reference (datetime, optional): Reference date for relative parsing.
         """
         self.reference = reference or datetime.now()
+        self.settings = {
+            "RELATIVE_BASE": self.reference,
+            "PREFER_DAY_OF_MONTH": "first"
+        }
+
+    def _parse_date_with_month_first(self, date_str: str) -> Optional[datetime]:
+        """
+        Parse a date string, ensuring month-only or month-year patterns start from the 1st.
+        """
+        date_str = date_str.strip()
+        
+        # Check if it's a month-year pattern (e.g., "jan 2025", "january 2025")
+        month_year_pattern = r'^([a-zA-Z]{3,9})\s+(\d{4})$'
+        match = re.match(month_year_pattern, date_str)
+        if match:
+            month_name = match.group(1)
+            year = match.group(2)
+            date_str = f"{month_name} 1, {year}"
+        
+        # Also handle month-only patterns (e.g., "jan", "january")
+        month_only_pattern = r'^([a-zA-Z]{3,9})$'
+        match = re.match(month_only_pattern, date_str)
+        if match:
+            month_name = match.group(1)
+            year = self.reference.year
+            date_str = f"{month_name} 1, {year}"
+        
+        return dateparser.parse(date_str, settings=self.settings)
 
     def parse_single_date(self, text: str) -> Optional[str]:
         """
         Parse a single date expression and return it as ISO string.
-
-        Args:
-            text (str): Input text containing a date expression.
-
-        Returns:
-            str: ISO formatted date (e.g., '2025-07-17') or None if not found.
         """
         text = text.strip().rstrip(".,!?")
-        results = search_dates(text, settings={"RELATIVE_BASE": self.reference})
+        results = search_dates(text, settings=self.settings)
         if results:
-            # print(f"[DEBUG] Parsing '{text}' → {results[0][1]}")
             return results[0][1].date().isoformat()
-        print(f"[DEBUG] Failed to parse '{text}'")
         return None
 
-    def parse_date_range(self, text: str) -> Optional[Tuple[str, str]]:
+    def parse_date_range(self, text: str) -> Optional[Tuple[Optional[str], Optional[str]]]:
         """
-        Parse a date range like 'from Monday to Friday' or 'between June 1 and June 5'.
-
-        Args:
-            text (str): Text with potential date range.
-
-        Returns:
-            Tuple[str, str]: ISO format (start_date, end_date) or None.
+        Parse a date range or open-ended range like 'since Jan 2025' or 'before May'.
         """
-        # Normalize phrases
         text = text.lower().strip()
-        patterns = [
-            r'from (.+?) to (.+?)($|[^a-z])',
-            r'between (.+?) and (.+?)($|[^a-z])'
-        ]
 
+        # Full range: 'from X to Y' or 'between X and Y'
+        # Use more specific patterns to avoid capturing too much
+        patterns = [
+            r'from\s+([a-zA-Z]+\s+\d{4}|\d{1,2}[/-]\d{1,2}[/-]\d{4}|[a-zA-Z]+)\s+to\s+([a-zA-Z]+\s+\d{4}|\d{1,2}[/-]\d{1,2}[/-]\d{4}|[a-zA-Z]+)',
+            r'between\s+([a-zA-Z]+\s+\d{4}|\d{1,2}[/-]\d{1,2}[/-]\d{4}|[a-zA-Z]+)\s+and\s+([a-zA-Z]+\s+\d{4}|\d{1,2}[/-]\d{1,2}[/-]\d{4}|[a-zA-Z]+)'
+        ]
         for pattern in patterns:
             match = re.search(pattern, text)
             if match:
-                start_text = match.group(1)
-                end_text = match.group(2)
-                start = dateparser.parse(start_text, settings={"RELATIVE_BASE": self.reference})
-                end = dateparser.parse(end_text, settings={"RELATIVE_BASE": self.reference})
+                start_str = match.group(1).strip()
+                end_str = match.group(2).strip()
+                start = self._parse_date_with_month_first(start_str)
+                end = self._parse_date_with_month_first(end_str)
                 if start and end:
                     return (start.date().isoformat(), end.date().isoformat())
+
+        # Handle "in [month year]" or "in [month]" patterns - should return full month range
+        in_month_pattern = re.search(r'in\s+([a-zA-Z]+\s+\d{4}|[a-zA-Z]+)', text)
+        if in_month_pattern:
+            month_str = in_month_pattern.group(1).strip()
+            start_date = self._parse_date_with_month_first(month_str)
+            if start_date:
+                # Calculate the last day of the month
+                if start_date.month == 12:
+                    next_month = start_date.replace(year=start_date.year + 1, month=1, day=1)
+                else:
+                    next_month = start_date.replace(month=start_date.month + 1, day=1)
+                last_day = next_month - timedelta(days=1)
+                return (start_date.date().isoformat(), last_day.date().isoformat())
+
+        # Open-ended "since" / "after"
+        open_start = re.search(r'(since|after)\s+([a-zA-Z]+\s+\d{4}|\d{1,2}[/-]\d{1,2}[/-]\d{4}|[a-zA-Z]+)', text)
+        if open_start:
+            start_str = open_start.group(2).strip()
+            start = self._parse_date_with_month_first(start_str)
+            if start:
+                return (start.date().isoformat(), None)
+
+        # Open-ended "before"
+        open_end = re.search(r'before\s+([a-zA-Z]+\s+\d{4}|\d{1,2}[/-]\d{1,2}[/-]\d{4}|[a-zA-Z]+)', text)
+        if open_end:
+            end_str = open_end.group(1).strip()
+            end = self._parse_date_with_month_first(end_str)
+            if end:
+                return (None, end.date().isoformat())
+
         return None
 
     def extract_all_dates(self, text: str) -> List[str]:
         """
-        Extract all dates mentioned in the text (used for fuzzy scanning).
-
-        Args:
-            text (str): Input query or message text.
-
-        Returns:
-            List[str]: All detected date strings in ISO format.
+        Extract all unique dates mentioned in the text.
+        For range expressions, extract the actual start and end dates.
         """
-        results = search_dates(text, settings={"RELATIVE_BASE": self.reference})
-        return [dt[1].date().isoformat() for dt in results] if results else []
+        # First try to parse as a range
+        range_result = self.parse_date_range(text)
+        if range_result:
+            dates = []
+            if range_result[0]:  # start date
+                dates.append(range_result[0])
+            if range_result[1]:  # end date
+                dates.append(range_result[1])
+            return dates
+        
+        # If not a range, extract all individual dates
+        results = search_dates(text, settings=self.settings)
+        if not results:
+            return []
+        seen = set()
+        dates = []
+        for _, dt in results:
+            iso = dt.date().isoformat()
+            if iso not in seen:
+                seen.add(iso)
+                dates.append(iso)
+        return dates
 
-    def parse(self, text: str) -> Union[Tuple[str, str], str, None]:
+    def parse(self, text: str) -> Union[Tuple[Optional[str], Optional[str]], str, None]:
         """
         Main entry point: try date range first, then fallback to single date.
-
-        Args:
-            text (str): User input text.
-
-        Returns:
-            Union[Tuple[str, str], str, None]: Range tuple, single date, or None.
         """
         range_result = self.parse_date_range(text)
         if range_result:
             return range_result
-        cleaned_text = text.strip().rstrip(".,!?")
-        return self.parse_single_date(cleaned_text)
+        return self.parse_single_date(text.strip().rstrip(".,!?"))
 
 
 # Example usage
 if __name__ == "__main__":
     dp = DateParser()
-    print(dp.parse("from jan 1 2025 to  today"))
-    print(dp.parse(" friday"))
+    print(dp.extract_all_dates("emails from sophia from jan 2025 to july 2025"))
+    print(dp.parse("emails from sophia in jan 2025"))
+    print(dp.parse("emails before April 2025"))
     print(dp.extract_all_dates("find meetings from last week and interviews next Monday"))
+
+
+# import warnings
+# warnings.filterwarnings("ignore", category=DeprecationWarning, module="dateparser")
+
+# import dateparser
+# from dateparser.search import search_dates
+# from typing import Optional, Tuple, List, Union
+# import re
+# from datetime import datetime
+
+
+# class DateParser:
+#     def __init__(self, reference: datetime = None):
+#         """
+#         Initialize the DateParser.
+
+#         Args:
+#             reference (datetime, optional): Reference date for relative parsing.
+#         """
+#         self.reference = reference or datetime.now()
+#         self.settings = {
+#             "RELATIVE_BASE": self.reference,
+#             "PREFER_DAY_OF_MONTH": "first"  # Helps avoid ambiguous parsing warning
+#         }
+
+#     def parse_single_date(self, text: str) -> Optional[str]:
+#         """
+#         Parse a single date expression and return it as ISO string.
+#         """
+#         text = text.strip().rstrip(".,!?")
+#         results = search_dates(text, settings=self.settings)
+#         if results:
+#             return results[0][1].date().isoformat()
+#         return None
+
+#     def parse_date_range(self, text: str) -> Optional[Tuple[Optional[str], Optional[str]]]:
+#         """
+#         Parse a date range or open-ended range like 'since Jan 2025' or 'before May'.
+#         """
+#         text = text.lower().strip()
+
+#         # Full range: 'from X to Y' or 'between X and Y'
+#         patterns = [
+#             r'from (.+?) to (.+?)(?:$|[^a-z])',
+#             r'between (.+?) and (.+?)(?:$|[^a-z])'
+#         ]
+#         for pattern in patterns:
+#             match = re.search(pattern, text)
+#             if match:
+#                 start = dateparser.parse(match.group(1), settings=self.settings)
+#                 end = dateparser.parse(match.group(2), settings=self.settings)
+#                 if start and end:
+#                     return (start.date().isoformat(), end.date().isoformat())
+
+#         # Open-ended "since" / "after"
+#         open_start = re.search(r'(since|after) (.+?)(?:$|[^a-z])', text)
+#         if open_start:
+#             start = dateparser.parse(open_start.group(2), settings=self.settings)
+#             if start:
+#                 return (start.date().isoformat(), None)
+
+#         # Open-ended "before"
+#         open_end = re.search(r'before (.+?)(?:$|[^a-z])', text)
+#         if open_end:
+#             end = dateparser.parse(open_end.group(1), settings=self.settings)
+#             if end:
+#                 return (None, end.date().isoformat())
+
+#         return None
+
+#     def extract_all_dates(self, text: str) -> List[str]:
+#         """
+#         Extract all unique dates mentioned in the text.
+#         """
+#         results = search_dates(text, settings=self.settings)
+#         if not results:
+#             return []
+#         seen = set()
+#         dates = []
+#         for _, dt in results:
+#             iso = dt.date().isoformat()
+#             if iso not in seen:
+#                 seen.add(iso)
+#                 dates.append(iso)
+#         return dates
+
+#     def parse(self, text: str) -> Union[Tuple[Optional[str], Optional[str]], str, None]:
+#         """
+#         Main entry point: try date range first, then fallback to single date.
+#         """
+#         range_result = self.parse_date_range(text)
+#         if range_result:
+#             return range_result
+#         return self.parse_single_date(text.strip().rstrip(".,!?"))
+
+
+# # Example usage
+# if __name__ == "__main__":
+#     dp = DateParser()
+#     print(dp.extract_all_dates("emails from sophia from jan 2025 to july 2025"))
+#     print(dp.parse("emails from sophia since jan 2025"))
+#     print(dp.parse("emails before April 2025"))
+#     print(dp.extract_all_dates("find meetings from last week and interviews next Monday"))
+
+
+
+# # import dateparser
+# # from dateparser.search import search_dates
+# # from typing import Optional, Tuple, List, Union
+# # import re
+# # from datetime import datetime
+
+
+# # class DateParser:
+# #     def __init__(self, reference: datetime = None):
+# #         """
+# #         Initialize the DateParser.
+
+# #         Args:
+# #             reference (datetime, optional): Reference date for relative parsing (e.g., for testing).
+# #         """
+# #         self.reference = reference or datetime.now()
+
+# #     def parse_single_date(self, text: str) -> Optional[str]:
+# #         """
+# #         Parse a single date expression and return it as ISO string.
+
+# #         Args:
+# #             text (str): Input text containing a date expression.
+
+# #         Returns:
+# #             str: ISO formatted date (e.g., '2025-07-17') or None if not found.
+# #         """
+# #         text = text.strip().rstrip(".,!?")
+# #         results = search_dates(text, settings={"RELATIVE_BASE": self.reference})
+# #         if results:
+# #             # print(f"[DEBUG] Parsing '{text}' → {results[0][1]}")
+# #             return results[0][1].date().isoformat()
+# #         print(f"[DEBUG] Failed to parse '{text}'")
+# #         return None
+
+# #     def parse_date_range(self, text: str) -> Optional[Tuple[str, str]]:
+# #         """
+# #         Parse a date range like 'from Monday to Friday' or 'between June 1 and June 5'.
+
+# #         Args:
+# #             text (str): Text with potential date range.
+
+# #         Returns:
+# #             Tuple[str, str]: ISO format (start_date, end_date) or None.
+# #         """
+# #         # Normalize phrases
+# #         text = text.lower().strip()
+# #         patterns = [
+# #             r'from (.+?) to (.+?)($|[^a-z])',
+# #             r'between (.+?) and (.+?)($|[^a-z])'
+# #         ]
+
+# #         for pattern in patterns:
+# #             match = re.search(pattern, text)
+# #             if match:
+# #                 start_text = match.group(1)
+# #                 end_text = match.group(2)
+# #                 start = dateparser.parse(start_text, settings={"RELATIVE_BASE": self.reference})
+# #                 end = dateparser.parse(end_text, settings={"RELATIVE_BASE": self.reference})
+# #                 if start and end:
+# #                     return (start.date().isoformat(), end.date().isoformat())
+# #         return None
+
+# #     def extract_all_dates(self, text: str) -> List[str]:
+# #         """
+# #         Extract all dates mentioned in the text (used for fuzzy scanning).
+
+# #         Args:
+# #             text (str): Input query or message text.
+
+# #         Returns:
+# #             List[str]: All detected date strings in ISO format.
+# #         """
+# #         results = search_dates(text, settings={"RELATIVE_BASE": self.reference})
+# #         return [dt[1].date().isoformat() for dt in results] if results else []
+
+# #     def parse(self, text: str) -> Union[Tuple[str, str], str, None]:
+# #         """
+# #         Main entry point: try date range first, then fallback to single date.
+
+# #         Args:
+# #             text (str): User input text.
+
+# #         Returns:
+# #             Union[Tuple[str, str], str, None]: Range tuple, single date, or None.
+# #         """
+# #         range_result = self.parse_date_range(text)
+# #         if range_result:
+# #             return range_result
+# #         cleaned_text = text.strip().rstrip(".,!?")
+# #         return self.parse_single_date(cleaned_text)
+
+
+# # # Example usage
+# # if __name__ == "__main__":
+# #     dp = DateParser()
+# #     print(dp.extract_all_dates("emails from sophia from jan 2025 to july 2025"))
+# #     print(dp.parse(" emails from sophia since jan 2025"))
+# #     print(dp.extract_all_dates("find meetings from last week and interviews next Monday"))

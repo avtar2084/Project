@@ -55,16 +55,24 @@ class MeetingEntityExtractor:
                 processed['people'][last_name.lower()] = person
                 processed['people'][f"{first_name} {last_name}".lower()] = person
         
-        # Process other categories
+        
+        # Process teams, topics, and meeting types
+        # Use full names for matching, no partial keywords
         for category in ['teams', 'topics', 'meeting_types']:
             for item in self.metadata[category]:
+            # Only include full item as match key (no partial keywords like 'review')
                 processed[category][item.lower()] = item
-                # Add variations (e.g., "code review" -> "review")
-                if category == 'topics' and ' ' in item:
-                    words = item.split()
-                    for word in words:
-                        if len(word) > 3:  # Avoid short words
-                            processed[category][word.lower()] = item
+
+        # # Process other categories
+        # for category in ['teams', 'topics', 'meeting_types']:
+        #     for item in self.metadata[category]:
+        #         processed[category][item.lower()] = item
+        #         # Add variations (e.g., "code review" -> "review")
+        #         if category == 'topics' and ' ' in item:
+        #             words = item.split()
+        #             for word in words:
+        #                 if len(word) > 3:  # Avoid short words
+        #                     processed[category][word.lower()] = item
         
         # Process locations with variations
         for location in self.metadata['locations']:
@@ -157,10 +165,10 @@ if __name__ == "__main__":
     
     # Test examples
     test_queries = [
-        "email from sophia?",
-        # "Let's have a standup meeting with the engineering team in Zoom",
-        # "Schedule an interview with Sarah Chen in Meeting Room",
-        # "Need to do a demo with the product team",
+        "code review in conference room a, next week?",
+        "Let's have a standup meeting with the engineering team in Zoom",
+        "Schedule an interview with Sarah Chen in Meeting Room",
+        "emails from  james to sarah",
         # "Performance review with Maya Singh in Office"
     ]
     
