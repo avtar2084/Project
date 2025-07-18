@@ -1,0 +1,5361 @@
+[
+  {
+    "id": "email_1",
+    "subject": "Weekly performance review report",
+    "sender": "tom.garcia",
+    "recipients": [
+      "jennifer.lee"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-22T22:25:45",
+    "body": "Hi team,\n\nI wanted to follow up on the performance review we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\ntom.garcia",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_2",
+    "subject": "Update on project update",
+    "sender": "jessica.adams",
+    "recipients": [
+      "rebecca.moore",
+      "william.king"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-12T18:06:00",
+    "body": "Hi team,\n\nWe need to discuss the project update at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\njessica.adams",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "marketing",
+    "topic": "project update"
+  },
+  {
+    "id": "email_3",
+    "subject": "Question about code review",
+    "sender": "john.doe",
+    "recipients": [
+      "daniel.lewis",
+      "david.wilson"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-16T06:24:11",
+    "body": "Hello,\n\nI've completed the code review task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\njohn.doe",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "code review"
+  },
+  {
+    "id": "email_4",
+    "subject": "Discussion: code review",
+    "sender": "john.doe",
+    "recipients": [
+      "alex.kim",
+      "maya.singh"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-17T06:55:10",
+    "body": "Hello,\n\nI've completed the code review task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\njohn.doe",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "code review"
+  },
+  {
+    "id": "email_5",
+    "subject": "Next steps for training",
+    "sender": "robert.jackson",
+    "recipients": [
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-13T23:46:26",
+    "body": "Hello everyone,\n\nJust a quick update on the training project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nrobert.jackson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "training"
+  },
+  {
+    "id": "email_6",
+    "subject": "Urgent: standup",
+    "sender": "sophia.rodriguez",
+    "recipients": [
+      "jennifer.lee",
+      "tyler.green"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-30T13:50:07",
+    "body": "Hi,\n\nI need your help with the standup issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nsophia.rodriguez",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "legal",
+    "topic": "standup"
+  },
+  {
+    "id": "email_7",
+    "subject": "Next steps for demo",
+    "sender": "nicole.thompson",
+    "recipients": [
+      "james.clark",
+      "john.doe"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-20T04:15:44",
+    "body": "Hi everyone,\n\nI have some questions about the demo approach. Could someone from the marketing team help clarify?\n\nThanks,\nnicole.thompson",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "demo"
+  },
+  {
+    "id": "email_8",
+    "subject": "Discussion: performance review",
+    "sender": "james.clark",
+    "recipients": [
+      "sarah.chen"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-08T19:39:35",
+    "body": "Hello,\n\nI'm sharing the latest update on performance review. Please see the attached document for more details.\n\nBest,\njames.clark",
+    "attachments": [],
+    "read": true,
+    "important": true,
+    "team": "engineering",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_9",
+    "subject": "Proposal for code review",
+    "sender": "tom.garcia",
+    "recipients": [
+      "jennifer.lee"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-08T11:37:27",
+    "body": "Team,\n\nGreat work on the code review this week! The design team is really making excellent progress.\n\nBest,\ntom.garcia",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "code review"
+  },
+  {
+    "id": "email_10",
+    "subject": "Weekly meeting request report",
+    "sender": "david.wilson",
+    "recipients": [
+      "nicole.thompson",
+      "emma.davis",
+      "kevin.martinez"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-26T14:18:14",
+    "body": "Hi,\n\nI need your help with the meeting request issue. Could we schedule a meeting to discuss this further?\n\nThanks,\ndavid.wilson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_11",
+    "subject": "Devops team - performance review",
+    "sender": "chris.taylor",
+    "recipients": [
+      "james.clark",
+      "daniel.lewis",
+      "jessica.adams"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-30T21:39:59",
+    "body": "Hi everyone,\n\nI have some questions about the performance review approach. Could someone from the devops team help clarify?\n\nThanks,\nchris.taylor",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_12",
+    "subject": "Feedback on design review",
+    "sender": "anna.white",
+    "recipients": [
+      "maya.singh",
+      "robert.jackson"
+    ],
+    "cc": [
+      "rebecca.moore",
+      "david.wilson"
+    ],
+    "timestamp": "2025-07-27T07:55:29",
+    "body": "Hi team,\n\nWe need to discuss the design review at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nanna.white",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "design review"
+  },
+  {
+    "id": "email_13",
+    "subject": "Design team - meeting request",
+    "sender": "rebecca.moore",
+    "recipients": [
+      "amanda.scott",
+      "tyler.green",
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-22T19:18:36",
+    "body": "Team,\n\nGreat work on the meeting request this week! The design team is really making excellent progress.\n\nBest,\nrebecca.moore",
+    "attachments": [],
+    "read": true,
+    "important": true,
+    "team": "design",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_14",
+    "subject": "Legal team - meeting request",
+    "sender": "rebecca.moore",
+    "recipients": [
+      "raj.sharma"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-08T15:43:31",
+    "body": "Hello,\n\nI've completed the meeting request task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nrebecca.moore",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_15",
+    "subject": "RE: Standup",
+    "sender": "tom.garcia",
+    "recipients": [
+      "mike.johnson"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-06T03:53:28",
+    "body": "Team,\n\nGreat work on the standup this week! The product team is really making excellent progress.\n\nBest,\ntom.garcia",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "standup"
+  },
+  {
+    "id": "email_16",
+    "subject": "Hr team - demo",
+    "sender": "anna.white",
+    "recipients": [
+      "mike.johnson",
+      "chris.taylor"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-26T01:14:41",
+    "body": "Hi team,\n\nWe need to discuss the demo at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nanna.white",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "demo"
+  },
+  {
+    "id": "email_17",
+    "subject": "Hr team - interview",
+    "sender": "chris.taylor",
+    "recipients": [
+      "alex.kim"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-08T21:05:26",
+    "body": "Hi,\n\nI need your help with the interview issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nchris.taylor",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "interview"
+  },
+  {
+    "id": "email_18",
+    "subject": "Weekly interview report",
+    "sender": "robert.jackson",
+    "recipients": [
+      "lisa.brown"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-06T11:35:13",
+    "body": "Hello,\n\nI've completed the interview task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nrobert.jackson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "interview"
+  },
+  {
+    "id": "email_19",
+    "subject": "RE: Meeting Request",
+    "sender": "emma.davis",
+    "recipients": [
+      "daniel.lewis"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-26T16:13:42",
+    "body": "Hello,\n\nI've completed the meeting request task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nemma.davis",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_20",
+    "subject": "Status: bug fix",
+    "sender": "tyler.green",
+    "recipients": [
+      "tom.garcia",
+      "john.doe",
+      "robert.jackson"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-19T08:35:06",
+    "body": "Hi,\n\nI need your help with the bug fix issue. Could we schedule a meeting to discuss this further?\n\nThanks,\ntyler.green",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "devops",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_21",
+    "subject": "Weekly bug fix report",
+    "sender": "tom.garcia",
+    "recipients": [
+      "mark.anderson"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-08T15:25:16",
+    "body": "Hi team,\n\nI wanted to follow up on the bug fix we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\ntom.garcia",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_22",
+    "subject": "Feedback on standup",
+    "sender": "david.wilson",
+    "recipients": [
+      "lisa.brown"
+    ],
+    "cc": [
+      "alex.kim",
+      "john.doe"
+    ],
+    "timestamp": "2025-06-21T10:06:09",
+    "body": "Team,\n\nGreat work on the standup this week! The engineering team is really making excellent progress.\n\nBest,\ndavid.wilson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "standup"
+  },
+  {
+    "id": "email_23",
+    "subject": "Next steps for code review",
+    "sender": "sophia.rodriguez",
+    "recipients": [
+      "lisa.brown",
+      "maya.singh"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-24T15:24:01",
+    "body": "Hello everyone,\n\nJust a quick update on the code review project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nsophia.rodriguez",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "code review"
+  },
+  {
+    "id": "email_24",
+    "subject": "Urgent: bug fix",
+    "sender": "tom.garcia",
+    "recipients": [
+      "mike.johnson",
+      "william.king",
+      "jennifer.lee"
+    ],
+    "cc": [
+      "sarah.chen",
+      "priya.patel"
+    ],
+    "timestamp": "2025-07-14T22:50:16",
+    "body": "Hi team,\n\nI wanted to follow up on the bug fix we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\ntom.garcia",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_25",
+    "subject": "Meeting: performance review",
+    "sender": "anna.white",
+    "recipients": [
+      "chris.taylor",
+      "nicole.thompson"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-02T10:19:07",
+    "body": "Hi team,\n\nWe need to discuss the performance review at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nanna.white",
+    "attachments": [],
+    "read": false,
+    "important": true,
+    "team": "hr",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_26",
+    "subject": "Status: design review",
+    "sender": "john.doe",
+    "recipients": [
+      "sarah.chen",
+      "sophia.rodriguez",
+      "jessica.adams"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-20T05:23:20",
+    "body": "Hi team,\n\nI wanted to follow up on the design review we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\njohn.doe",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "design review"
+  },
+  {
+    "id": "email_27",
+    "subject": "Meeting: feature request",
+    "sender": "chris.taylor",
+    "recipients": [
+      "john.doe",
+      "jessica.adams",
+      "anna.white"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-18T13:00:56",
+    "body": "Hi team,\n\nWe need to discuss the feature request at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nchris.taylor",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_28",
+    "subject": "Status: feature request",
+    "sender": "nicole.thompson",
+    "recipients": [
+      "john.doe",
+      "jennifer.lee"
+    ],
+    "cc": [
+      "maya.singh"
+    ],
+    "timestamp": "2025-07-06T05:29:31",
+    "body": "Hi team,\n\nI wanted to follow up on the feature request we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nnicole.thompson",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_29",
+    "subject": "Action required: sprint planning",
+    "sender": "rebecca.moore",
+    "recipients": [
+      "maya.singh"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-03T08:36:32",
+    "body": "Hi everyone,\n\nI have some questions about the sprint planning approach. Could someone from the hr team help clarify?\n\nThanks,\nrebecca.moore",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_30",
+    "subject": "Urgent: deployment",
+    "sender": "priya.patel",
+    "recipients": [
+      "raj.sharma"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-29T09:14:11",
+    "body": "Hello,\n\nI've completed the deployment task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\npriya.patel",
+    "attachments": [],
+    "read": false,
+    "important": true,
+    "team": "engineering",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_31",
+    "subject": "Discussion: meeting request",
+    "sender": "maya.singh",
+    "recipients": [
+      "raj.sharma"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-11T04:31:34",
+    "body": "Hello everyone,\n\nJust a quick update on the meeting request project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nmaya.singh",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_32",
+    "subject": "RE: Deployment",
+    "sender": "jessica.adams",
+    "recipients": [
+      "sarah.chen"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-13T23:34:55",
+    "body": "Hi team,\n\nWe need to discuss the deployment at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\njessica.adams",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_33",
+    "subject": "Meeting: interview",
+    "sender": "raj.sharma",
+    "recipients": [
+      "emma.davis",
+      "kevin.martinez"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-28T20:57:06",
+    "body": "Hello,\n\nI'm sharing the latest update on interview. Please see the attached document for more details.\n\nBest,\nraj.sharma",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "interview"
+  },
+  {
+    "id": "email_34",
+    "subject": "Meeting: standup",
+    "sender": "lisa.brown",
+    "recipients": [
+      "kevin.martinez",
+      "chris.taylor"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-04T12:55:30",
+    "body": "Hi team,\n\nWe need to discuss the standup at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nlisa.brown",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "standup"
+  },
+  {
+    "id": "email_35",
+    "subject": "Marketing team - deployment",
+    "sender": "nicole.thompson",
+    "recipients": [
+      "sarah.chen",
+      "lisa.brown",
+      "amanda.scott"
+    ],
+    "cc": [
+      "daniel.lewis"
+    ],
+    "timestamp": "2025-07-21T21:02:02",
+    "body": "Hello,\n\nI've completed the deployment task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nnicole.thompson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_36",
+    "subject": "Weekly training report",
+    "sender": "james.clark",
+    "recipients": [
+      "mark.anderson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-31T02:21:37",
+    "body": "Hi,\n\nI need your help with the training issue. Could we schedule a meeting to discuss this further?\n\nThanks,\njames.clark",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "training"
+  },
+  {
+    "id": "email_37",
+    "subject": "Update on demo",
+    "sender": "amanda.scott",
+    "recipients": [
+      "tom.garcia",
+      "mark.anderson"
+    ],
+    "cc": [
+      "kevin.martinez",
+      "jessica.adams"
+    ],
+    "timestamp": "2025-08-13T02:33:28",
+    "body": "Hello,\n\nI'm sharing the latest update on demo. Please see the attached document for more details.\n\nBest,\namanda.scott",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "demo"
+  },
+  {
+    "id": "email_38",
+    "subject": "Status: standup",
+    "sender": "tyler.green",
+    "recipients": [
+      "anna.white",
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-13T07:41:11",
+    "body": "Hello,\n\nI've completed the standup task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\ntyler.green",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "standup"
+  },
+  {
+    "id": "email_39",
+    "subject": "Feedback on training",
+    "sender": "maya.singh",
+    "recipients": [
+      "mark.anderson",
+      "priya.patel"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-30T16:20:32",
+    "body": "Hi team,\n\nI wanted to follow up on the training we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nmaya.singh",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "training"
+  },
+  {
+    "id": "email_40",
+    "subject": "Weekly standup report",
+    "sender": "tyler.green",
+    "recipients": [
+      "emma.davis",
+      "kevin.martinez",
+      "priya.patel"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-14T14:02:23",
+    "body": "Hi team,\n\nWe need to discuss the standup at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\ntyler.green",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": true,
+    "team": "hr",
+    "topic": "standup"
+  },
+  {
+    "id": "email_41",
+    "subject": "RE: Training",
+    "sender": "david.wilson",
+    "recipients": [
+      "john.doe",
+      "tom.garcia"
+    ],
+    "cc": [
+      "sarah.chen"
+    ],
+    "timestamp": "2025-06-25T09:11:06",
+    "body": "Hello,\n\nI've completed the training task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\ndavid.wilson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "training"
+  },
+  {
+    "id": "email_42",
+    "subject": "Discussion: meeting request",
+    "sender": "lisa.brown",
+    "recipients": [
+      "amanda.scott"
+    ],
+    "cc": [
+      "william.king",
+      "tom.garcia"
+    ],
+    "timestamp": "2025-07-25T10:46:32",
+    "body": "Team,\n\nGreat work on the meeting request this week! The hr team is really making excellent progress.\n\nBest,\nlisa.brown",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_43",
+    "subject": "Meeting: code review",
+    "sender": "john.doe",
+    "recipients": [
+      "jessica.adams",
+      "lisa.brown",
+      "rebecca.moore"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-23T06:04:29",
+    "body": "Hello everyone,\n\nJust a quick update on the code review project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\njohn.doe",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "code review"
+  },
+  {
+    "id": "email_44",
+    "subject": "Discussion: sprint planning",
+    "sender": "rebecca.moore",
+    "recipients": [
+      "john.doe",
+      "daniel.lewis"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-10T16:41:16",
+    "body": "Hi,\n\nI need your help with the sprint planning issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nrebecca.moore",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_45",
+    "subject": "Next steps for feature request",
+    "sender": "jessica.adams",
+    "recipients": [
+      "david.wilson",
+      "sarah.chen",
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-02T12:20:54",
+    "body": "Hi team,\n\nI wanted to follow up on the feature request we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\njessica.adams",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_46",
+    "subject": "RE: Training",
+    "sender": "jennifer.lee",
+    "recipients": [
+      "emma.davis"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-09T04:18:47",
+    "body": "Hello everyone,\n\nJust a quick update on the training project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\njennifer.lee",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "training"
+  },
+  {
+    "id": "email_47",
+    "subject": "Weekly meeting request report",
+    "sender": "david.wilson",
+    "recipients": [
+      "emma.davis"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-28T12:56:15",
+    "body": "Hello,\n\nI've completed the meeting request task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\ndavid.wilson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_48",
+    "subject": "Product team - interview",
+    "sender": "james.clark",
+    "recipients": [
+      "jennifer.lee",
+      "lisa.brown"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-14T04:32:21",
+    "body": "Hi,\n\nI need your help with the interview issue. Could we schedule a meeting to discuss this further?\n\nThanks,\njames.clark",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "interview"
+  },
+  {
+    "id": "email_49",
+    "subject": "Urgent: deployment",
+    "sender": "emma.davis",
+    "recipients": [
+      "sophia.rodriguez"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-06T07:05:06",
+    "body": "Hi,\n\nI need your help with the deployment issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nemma.davis",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_50",
+    "subject": "Status: design review",
+    "sender": "chris.taylor",
+    "recipients": [
+      "daniel.lewis",
+      "mike.johnson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-23T22:02:28",
+    "body": "Hi team,\n\nI wanted to follow up on the design review we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nchris.taylor",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "design review"
+  },
+  {
+    "id": "email_51",
+    "subject": "RE: Code Review",
+    "sender": "robert.jackson",
+    "recipients": [
+      "mark.anderson",
+      "lisa.brown"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-29T12:34:54",
+    "body": "Hi,\n\nI need your help with the code review issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nrobert.jackson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "devops",
+    "topic": "code review"
+  },
+  {
+    "id": "email_52",
+    "subject": "RE: Feature Request",
+    "sender": "james.clark",
+    "recipients": [
+      "robert.jackson",
+      "kevin.martinez",
+      "maya.singh"
+    ],
+    "cc": [
+      "william.king"
+    ],
+    "timestamp": "2025-08-03T12:19:36",
+    "body": "Hello,\n\nI've completed the feature request task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\njames.clark",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "marketing",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_53",
+    "subject": "Question about performance review",
+    "sender": "sarah.chen",
+    "recipients": [
+      "lisa.brown"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-05T14:13:59",
+    "body": "Hello,\n\nI've completed the performance review task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nsarah.chen",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_54",
+    "subject": "Meeting: project update",
+    "sender": "tom.garcia",
+    "recipients": [
+      "mark.anderson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-05T03:33:51",
+    "body": "Hi team,\n\nWe need to discuss the project update at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\ntom.garcia",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "project update"
+  },
+  {
+    "id": "email_55",
+    "subject": "Proposal for sprint planning",
+    "sender": "tom.garcia",
+    "recipients": [
+      "mike.johnson",
+      "emma.davis",
+      "daniel.lewis"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-08T11:20:13",
+    "body": "Hello,\n\nI'm sharing the latest update on sprint planning. Please see the attached document for more details.\n\nBest,\ntom.garcia",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_56",
+    "subject": "Urgent: training",
+    "sender": "jennifer.lee",
+    "recipients": [
+      "chris.taylor",
+      "sophia.rodriguez",
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-22T23:50:04",
+    "body": "Hi everyone,\n\nI have some questions about the training approach. Could someone from the devops team help clarify?\n\nThanks,\njennifer.lee",
+    "attachments": [],
+    "read": true,
+    "important": true,
+    "team": "devops",
+    "topic": "training"
+  },
+  {
+    "id": "email_57",
+    "subject": "Action required: design review",
+    "sender": "john.doe",
+    "recipients": [
+      "rebecca.moore"
+    ],
+    "cc": [
+      "mark.anderson",
+      "james.clark"
+    ],
+    "timestamp": "2025-08-06T04:11:44",
+    "body": "Team,\n\nGreat work on the design review this week! The design team is really making excellent progress.\n\nBest,\njohn.doe",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "design review"
+  },
+  {
+    "id": "email_58",
+    "subject": "Devops team - sprint planning",
+    "sender": "lisa.brown",
+    "recipients": [
+      "mike.johnson",
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-28T21:44:33",
+    "body": "Hi team,\n\nI wanted to follow up on the sprint planning we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nlisa.brown",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "devops",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_59",
+    "subject": "Next steps for sprint planning",
+    "sender": "nicole.thompson",
+    "recipients": [
+      "raj.sharma"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-21T00:53:35",
+    "body": "Hi team,\n\nI wanted to follow up on the sprint planning we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nnicole.thompson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_60",
+    "subject": "Next steps for bug fix",
+    "sender": "anna.white",
+    "recipients": [
+      "sophia.rodriguez"
+    ],
+    "cc": [
+      "maya.singh"
+    ],
+    "timestamp": "2025-06-23T05:47:40",
+    "body": "Hello everyone,\n\nJust a quick update on the bug fix project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nanna.white",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_61",
+    "subject": "Discussion: meeting request",
+    "sender": "maya.singh",
+    "recipients": [
+      "jennifer.lee",
+      "william.king"
+    ],
+    "cc": [
+      "david.wilson",
+      "james.clark"
+    ],
+    "timestamp": "2025-07-12T04:52:26",
+    "body": "Hi everyone,\n\nI have some questions about the meeting request approach. Could someone from the design team help clarify?\n\nThanks,\nmaya.singh",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_62",
+    "subject": "Follow-up: interview",
+    "sender": "lisa.brown",
+    "recipients": [
+      "maya.singh",
+      "john.doe"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-16T22:29:52",
+    "body": "Hi everyone,\n\nI have some questions about the interview approach. Could someone from the legal team help clarify?\n\nThanks,\nlisa.brown",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "interview"
+  },
+  {
+    "id": "email_63",
+    "subject": "Feedback on demo",
+    "sender": "mark.anderson",
+    "recipients": [
+      "lisa.brown"
+    ],
+    "cc": [
+      "sarah.chen"
+    ],
+    "timestamp": "2025-06-20T02:39:59",
+    "body": "Hi team,\n\nWe need to discuss the demo at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nmark.anderson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "demo"
+  },
+  {
+    "id": "email_64",
+    "subject": "Design team - bug fix",
+    "sender": "sarah.chen",
+    "recipients": [
+      "raj.sharma",
+      "anna.white",
+      "sophia.rodriguez"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-06T07:39:47",
+    "body": "Hello everyone,\n\nJust a quick update on the bug fix project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nsarah.chen",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_65",
+    "subject": "Weekly meeting request report",
+    "sender": "sophia.rodriguez",
+    "recipients": [
+      "robert.jackson",
+      "william.king",
+      "lisa.brown"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-08T21:46:40",
+    "body": "Team,\n\nGreat work on the meeting request this week! The design team is really making excellent progress.\n\nBest,\nsophia.rodriguez",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_66",
+    "subject": "Update on project update",
+    "sender": "jennifer.lee",
+    "recipients": [
+      "mike.johnson",
+      "john.doe",
+      "emma.davis"
+    ],
+    "cc": [
+      "amanda.scott"
+    ],
+    "timestamp": "2025-08-06T13:17:43",
+    "body": "Hi team,\n\nI wanted to follow up on the project update we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\njennifer.lee",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "devops",
+    "topic": "project update"
+  },
+  {
+    "id": "email_67",
+    "subject": "Weekly project update report",
+    "sender": "william.king",
+    "recipients": [
+      "sarah.chen"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-06T12:32:35",
+    "body": "Hi team,\n\nI wanted to follow up on the project update we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nwilliam.king",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "project update"
+  },
+  {
+    "id": "email_68",
+    "subject": "Follow-up: training",
+    "sender": "mark.anderson",
+    "recipients": [
+      "john.doe",
+      "emma.davis",
+      "william.king"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-03T13:26:07",
+    "body": "Hi,\n\nI need your help with the training issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nmark.anderson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "training"
+  },
+  {
+    "id": "email_69",
+    "subject": "Feedback on feature request",
+    "sender": "raj.sharma",
+    "recipients": [
+      "jessica.adams"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-14T21:31:41",
+    "body": "Team,\n\nGreat work on the feature request this week! The engineering team is really making excellent progress.\n\nBest,\nraj.sharma",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_70",
+    "subject": "Urgent: meeting request",
+    "sender": "tom.garcia",
+    "recipients": [
+      "sarah.chen",
+      "william.king"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-29T08:43:03",
+    "body": "Hi everyone,\n\nI have some questions about the meeting request approach. Could someone from the hr team help clarify?\n\nThanks,\ntom.garcia",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_71",
+    "subject": "Engineering team - deployment",
+    "sender": "robert.jackson",
+    "recipients": [
+      "nicole.thompson",
+      "tom.garcia",
+      "john.doe"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-09T16:18:27",
+    "body": "Hello everyone,\n\nJust a quick update on the deployment project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nrobert.jackson",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_72",
+    "subject": "Next steps for interview",
+    "sender": "chris.taylor",
+    "recipients": [
+      "james.clark",
+      "mark.anderson",
+      "emma.davis"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-18T09:05:42",
+    "body": "Hello,\n\nI've completed the interview task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nchris.taylor",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "interview"
+  },
+  {
+    "id": "email_73",
+    "subject": "Action required: bug fix",
+    "sender": "emma.davis",
+    "recipients": [
+      "mike.johnson",
+      "chris.taylor",
+      "alex.kim"
+    ],
+    "cc": [
+      "anna.white",
+      "mark.anderson"
+    ],
+    "timestamp": "2025-06-29T11:00:32",
+    "body": "Hello,\n\nI've completed the bug fix task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nemma.davis",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_74",
+    "subject": "Proposal for code review",
+    "sender": "james.clark",
+    "recipients": [
+      "amanda.scott",
+      "jessica.adams"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-22T19:31:59",
+    "body": "Hello,\n\nI'm sharing the latest update on code review. Please see the attached document for more details.\n\nBest,\njames.clark",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "code review"
+  },
+  {
+    "id": "email_75",
+    "subject": "Action required: bug fix",
+    "sender": "amanda.scott",
+    "recipients": [
+      "nicole.thompson",
+      "emma.davis",
+      "tyler.green"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-02T03:20:02",
+    "body": "Hi team,\n\nI wanted to follow up on the bug fix we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\namanda.scott",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_76",
+    "subject": "Status: sprint planning",
+    "sender": "lisa.brown",
+    "recipients": [
+      "chris.taylor"
+    ],
+    "cc": [
+      "sarah.chen",
+      "nicole.thompson"
+    ],
+    "timestamp": "2025-07-31T00:23:11",
+    "body": "Hello,\n\nI'm sharing the latest update on sprint planning. Please see the attached document for more details.\n\nBest,\nlisa.brown",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_77",
+    "subject": "Devops team - standup",
+    "sender": "david.wilson",
+    "recipients": [
+      "william.king",
+      "daniel.lewis"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-24T11:50:00",
+    "body": "Hello,\n\nI'm sharing the latest update on standup. Please see the attached document for more details.\n\nBest,\ndavid.wilson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "devops",
+    "topic": "standup"
+  },
+  {
+    "id": "email_78",
+    "subject": "Status: bug fix",
+    "sender": "william.king",
+    "recipients": [
+      "tom.garcia"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-08T07:01:50",
+    "body": "Hello,\n\nI've completed the bug fix task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nwilliam.king",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_79",
+    "subject": "Question about interview",
+    "sender": "sophia.rodriguez",
+    "recipients": [
+      "maya.singh",
+      "tom.garcia",
+      "tyler.green"
+    ],
+    "cc": [
+      "lisa.brown"
+    ],
+    "timestamp": "2025-08-16T05:04:38",
+    "body": "Team,\n\nGreat work on the interview this week! The hr team is really making excellent progress.\n\nBest,\nsophia.rodriguez",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "interview"
+  },
+  {
+    "id": "email_80",
+    "subject": "Action required: project update",
+    "sender": "mark.anderson",
+    "recipients": [
+      "priya.patel"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-09T23:34:10",
+    "body": "Hello,\n\nI've completed the project update task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nmark.anderson",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "project update"
+  },
+  {
+    "id": "email_81",
+    "subject": "Status: performance review",
+    "sender": "jessica.adams",
+    "recipients": [
+      "kevin.martinez",
+      "amanda.scott"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-16T01:23:18",
+    "body": "Hi team,\n\nWe need to discuss the performance review at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\njessica.adams",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_82",
+    "subject": "Discussion: interview",
+    "sender": "james.clark",
+    "recipients": [
+      "david.wilson",
+      "daniel.lewis"
+    ],
+    "cc": [
+      "anna.white",
+      "jessica.adams"
+    ],
+    "timestamp": "2025-07-14T19:34:48",
+    "body": "Hi team,\n\nI wanted to follow up on the interview we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\njames.clark",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "interview"
+  },
+  {
+    "id": "email_83",
+    "subject": "Weekly deployment report",
+    "sender": "chris.taylor",
+    "recipients": [
+      "mike.johnson",
+      "tyler.green",
+      "anna.white"
+    ],
+    "cc": [
+      "jennifer.lee"
+    ],
+    "timestamp": "2025-07-13T18:27:28",
+    "body": "Hi team,\n\nWe need to discuss the deployment at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nchris.taylor",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "marketing",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_84",
+    "subject": "Update on standup",
+    "sender": "sophia.rodriguez",
+    "recipients": [
+      "sarah.chen",
+      "rebecca.moore"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-23T17:39:59",
+    "body": "Hello,\n\nI'm sharing the latest update on standup. Please see the attached document for more details.\n\nBest,\nsophia.rodriguez",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "devops",
+    "topic": "standup"
+  },
+  {
+    "id": "email_85",
+    "subject": "FW: Deployment - legal team",
+    "sender": "maya.singh",
+    "recipients": [
+      "emma.davis",
+      "david.wilson",
+      "jessica.adams"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-21T07:46:25",
+    "body": "Hi team,\n\nWe need to discuss the deployment at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nmaya.singh",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "legal",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_86",
+    "subject": "RE: Standup",
+    "sender": "david.wilson",
+    "recipients": [
+      "amanda.scott",
+      "priya.patel",
+      "raj.sharma"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-01T08:46:04",
+    "body": "Hi team,\n\nWe need to discuss the standup at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\ndavid.wilson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "standup"
+  },
+  {
+    "id": "email_87",
+    "subject": "Follow-up: project update",
+    "sender": "chris.taylor",
+    "recipients": [
+      "tom.garcia",
+      "sophia.rodriguez"
+    ],
+    "cc": [
+      "amanda.scott"
+    ],
+    "timestamp": "2025-08-05T01:46:08",
+    "body": "Hi everyone,\n\nI have some questions about the project update approach. Could someone from the engineering team help clarify?\n\nThanks,\nchris.taylor",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "project update"
+  },
+  {
+    "id": "email_88",
+    "subject": "Weekly performance review report",
+    "sender": "mark.anderson",
+    "recipients": [
+      "david.wilson",
+      "emma.davis",
+      "mike.johnson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-12T03:05:49",
+    "body": "Hi team,\n\nI wanted to follow up on the performance review we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nmark.anderson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_89",
+    "subject": "Legal team - code review",
+    "sender": "jennifer.lee",
+    "recipients": [
+      "james.clark",
+      "tom.garcia",
+      "raj.sharma"
+    ],
+    "cc": [
+      "sophia.rodriguez",
+      "alex.kim"
+    ],
+    "timestamp": "2025-07-06T06:35:53",
+    "body": "Hi team,\n\nI wanted to follow up on the code review we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\njennifer.lee",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "code review"
+  },
+  {
+    "id": "email_90",
+    "subject": "RE: Sprint Planning",
+    "sender": "emma.davis",
+    "recipients": [
+      "david.wilson",
+      "william.king",
+      "tom.garcia"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-07T10:17:25",
+    "body": "Hello,\n\nI've completed the sprint planning task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nemma.davis",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_91",
+    "subject": "Question about onboarding",
+    "sender": "priya.patel",
+    "recipients": [
+      "robert.jackson",
+      "emma.davis",
+      "rebecca.moore"
+    ],
+    "cc": [
+      "maya.singh"
+    ],
+    "timestamp": "2025-07-28T07:04:42",
+    "body": "Hello everyone,\n\nJust a quick update on the onboarding project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\npriya.patel",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_92",
+    "subject": "Action required: sprint planning",
+    "sender": "alex.kim",
+    "recipients": [
+      "maya.singh",
+      "james.clark",
+      "emma.davis"
+    ],
+    "cc": [
+      "sarah.chen",
+      "tom.garcia"
+    ],
+    "timestamp": "2025-07-13T21:01:41",
+    "body": "Hi everyone,\n\nI have some questions about the sprint planning approach. Could someone from the devops team help clarify?\n\nThanks,\nalex.kim",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_93",
+    "subject": "Next steps for sprint planning",
+    "sender": "emma.davis",
+    "recipients": [
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-31T03:40:08",
+    "body": "Hi team,\n\nWe need to discuss the sprint planning at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nemma.davis",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "legal",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_94",
+    "subject": "RE: Meeting Request",
+    "sender": "jessica.adams",
+    "recipients": [
+      "lisa.brown",
+      "sarah.chen",
+      "rebecca.moore"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-06T03:15:51",
+    "body": "Hello everyone,\n\nJust a quick update on the meeting request project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\njessica.adams",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "legal",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_95",
+    "subject": "RE: Design Review",
+    "sender": "maya.singh",
+    "recipients": [
+      "tom.garcia"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-02T02:02:24",
+    "body": "Hi everyone,\n\nI have some questions about the design review approach. Could someone from the engineering team help clarify?\n\nThanks,\nmaya.singh",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "design review"
+  },
+  {
+    "id": "email_96",
+    "subject": "Weekly demo report",
+    "sender": "tyler.green",
+    "recipients": [
+      "jessica.adams"
+    ],
+    "cc": [
+      "david.wilson",
+      "amanda.scott"
+    ],
+    "timestamp": "2025-07-03T11:38:56",
+    "body": "Team,\n\nGreat work on the demo this week! The product team is really making excellent progress.\n\nBest,\ntyler.green",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "demo"
+  },
+  {
+    "id": "email_97",
+    "subject": "Meeting: deployment",
+    "sender": "rebecca.moore",
+    "recipients": [
+      "mark.anderson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-06T16:02:45",
+    "body": "Hi team,\n\nI wanted to follow up on the deployment we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nrebecca.moore",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_98",
+    "subject": "Marketing team - project update",
+    "sender": "david.wilson",
+    "recipients": [
+      "sarah.chen",
+      "robert.jackson",
+      "mike.johnson"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-16T12:09:37",
+    "body": "Hi team,\n\nWe need to discuss the project update at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\ndavid.wilson",
+    "attachments": [],
+    "read": false,
+    "important": true,
+    "team": "marketing",
+    "topic": "project update"
+  },
+  {
+    "id": "email_99",
+    "subject": "Meeting: interview",
+    "sender": "david.wilson",
+    "recipients": [
+      "tyler.green",
+      "jennifer.lee",
+      "kevin.martinez"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-08T15:12:19",
+    "body": "Hello,\n\nI've completed the interview task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\ndavid.wilson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "marketing",
+    "topic": "interview"
+  },
+  {
+    "id": "email_100",
+    "subject": "Weekly standup report",
+    "sender": "mike.johnson",
+    "recipients": [
+      "nicole.thompson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-18T03:41:15",
+    "body": "Hi,\n\nI need your help with the standup issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nmike.johnson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "marketing",
+    "topic": "standup"
+  },
+  {
+    "id": "email_101",
+    "subject": "Design team - interview",
+    "sender": "chris.taylor",
+    "recipients": [
+      "david.wilson",
+      "sophia.rodriguez"
+    ],
+    "cc": [
+      "william.king"
+    ],
+    "timestamp": "2025-07-16T05:58:05",
+    "body": "Team,\n\nGreat work on the interview this week! The design team is really making excellent progress.\n\nBest,\nchris.taylor",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "interview"
+  },
+  {
+    "id": "email_102",
+    "subject": "RE: Performance Review",
+    "sender": "amanda.scott",
+    "recipients": [
+      "daniel.lewis",
+      "sarah.chen"
+    ],
+    "cc": [
+      "kevin.martinez"
+    ],
+    "timestamp": "2025-08-06T23:22:12",
+    "body": "Hi team,\n\nI wanted to follow up on the performance review we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\namanda.scott",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_103",
+    "subject": "Meeting: sprint planning",
+    "sender": "james.clark",
+    "recipients": [
+      "daniel.lewis",
+      "mike.johnson"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-25T05:36:13",
+    "body": "Hello,\n\nI've completed the sprint planning task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\njames.clark",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "marketing",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_104",
+    "subject": "Meeting: deployment",
+    "sender": "chris.taylor",
+    "recipients": [
+      "daniel.lewis",
+      "tom.garcia"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-28T19:23:16",
+    "body": "Hi team,\n\nI wanted to follow up on the deployment we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nchris.taylor",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_105",
+    "subject": "Proposal for performance review",
+    "sender": "lisa.brown",
+    "recipients": [
+      "daniel.lewis",
+      "maya.singh"
+    ],
+    "cc": [
+      "tyler.green"
+    ],
+    "timestamp": "2025-08-01T23:36:34",
+    "body": "Hello,\n\nI've completed the performance review task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nlisa.brown",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_106",
+    "subject": "Question about design review",
+    "sender": "tyler.green",
+    "recipients": [
+      "jennifer.lee"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-15T16:46:03",
+    "body": "Hi team,\n\nI wanted to follow up on the design review we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\ntyler.green",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "legal",
+    "topic": "design review"
+  },
+  {
+    "id": "email_107",
+    "subject": "Discussion: design review",
+    "sender": "tyler.green",
+    "recipients": [
+      "amanda.scott",
+      "mike.johnson",
+      "tom.garcia"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-02T11:28:19",
+    "body": "Hello everyone,\n\nJust a quick update on the design review project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\ntyler.green",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": true,
+    "team": "hr",
+    "topic": "design review"
+  },
+  {
+    "id": "email_108",
+    "subject": "Proposal for demo",
+    "sender": "mike.johnson",
+    "recipients": [
+      "sarah.chen"
+    ],
+    "cc": [
+      "jessica.adams",
+      "emma.davis"
+    ],
+    "timestamp": "2025-06-29T04:24:58",
+    "body": "Team,\n\nGreat work on the demo this week! The design team is really making excellent progress.\n\nBest,\nmike.johnson",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "demo"
+  },
+  {
+    "id": "email_109",
+    "subject": "Next steps for design review",
+    "sender": "james.clark",
+    "recipients": [
+      "john.doe"
+    ],
+    "cc": [
+      "alex.kim"
+    ],
+    "timestamp": "2025-06-20T19:08:14",
+    "body": "Hi team,\n\nWe need to discuss the design review at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\njames.clark",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "design review"
+  },
+  {
+    "id": "email_110",
+    "subject": "FW: Onboarding - legal team",
+    "sender": "sarah.chen",
+    "recipients": [
+      "raj.sharma"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-27T15:56:58",
+    "body": "Hi everyone,\n\nI have some questions about the onboarding approach. Could someone from the legal team help clarify?\n\nThanks,\nsarah.chen",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": true,
+    "team": "legal",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_111",
+    "subject": "Follow-up: code review",
+    "sender": "james.clark",
+    "recipients": [
+      "sarah.chen"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-27T01:24:18",
+    "body": "Team,\n\nGreat work on the code review this week! The design team is really making excellent progress.\n\nBest,\njames.clark",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "code review"
+  },
+  {
+    "id": "email_112",
+    "subject": "Urgent: code review",
+    "sender": "kevin.martinez",
+    "recipients": [
+      "tyler.green"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-12T17:28:00",
+    "body": "Hi team,\n\nI wanted to follow up on the code review we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nkevin.martinez",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "devops",
+    "topic": "code review"
+  },
+  {
+    "id": "email_113",
+    "subject": "Urgent: performance review",
+    "sender": "tom.garcia",
+    "recipients": [
+      "tyler.green",
+      "lisa.brown",
+      "kevin.martinez"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-03T05:17:54",
+    "body": "Hi everyone,\n\nI have some questions about the performance review approach. Could someone from the marketing team help clarify?\n\nThanks,\ntom.garcia",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_114",
+    "subject": "FW: Onboarding - devops team",
+    "sender": "anna.white",
+    "recipients": [
+      "alex.kim"
+    ],
+    "cc": [
+      "lisa.brown",
+      "robert.jackson"
+    ],
+    "timestamp": "2025-07-20T14:06:31",
+    "body": "Team,\n\nGreat work on the onboarding this week! The devops team is really making excellent progress.\n\nBest,\nanna.white",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_115",
+    "subject": "FW: Meeting Request - marketing team",
+    "sender": "raj.sharma",
+    "recipients": [
+      "priya.patel",
+      "sophia.rodriguez"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-20T03:56:29",
+    "body": "Team,\n\nGreat work on the meeting request this week! The marketing team is really making excellent progress.\n\nBest,\nraj.sharma",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "marketing",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_116",
+    "subject": "Follow-up: onboarding",
+    "sender": "emma.davis",
+    "recipients": [
+      "chris.taylor",
+      "jessica.adams"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-07T14:11:23",
+    "body": "Hi team,\n\nI wanted to follow up on the onboarding we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nemma.davis",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_117",
+    "subject": "Meeting: deployment",
+    "sender": "sophia.rodriguez",
+    "recipients": [
+      "chris.taylor",
+      "priya.patel",
+      "tom.garcia"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-20T08:04:40",
+    "body": "Hello,\n\nI've completed the deployment task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nsophia.rodriguez",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_118",
+    "subject": "Update on deployment",
+    "sender": "james.clark",
+    "recipients": [
+      "sarah.chen"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-03T22:02:07",
+    "body": "Hi,\n\nI need your help with the deployment issue. Could we schedule a meeting to discuss this further?\n\nThanks,\njames.clark",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "legal",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_119",
+    "subject": "Urgent: deployment",
+    "sender": "jennifer.lee",
+    "recipients": [
+      "emma.davis",
+      "sarah.chen",
+      "rebecca.moore"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-09T03:22:27",
+    "body": "Hi team,\n\nWe need to discuss the deployment at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\njennifer.lee",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_120",
+    "subject": "Weekly code review report",
+    "sender": "jessica.adams",
+    "recipients": [
+      "david.wilson",
+      "tyler.green",
+      "chris.taylor"
+    ],
+    "cc": [
+      "robert.jackson"
+    ],
+    "timestamp": "2025-07-20T16:55:44",
+    "body": "Hello,\n\nI've completed the code review task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\njessica.adams",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "code review"
+  },
+  {
+    "id": "email_121",
+    "subject": "Discussion: code review",
+    "sender": "emma.davis",
+    "recipients": [
+      "robert.jackson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-15T15:48:50",
+    "body": "Hello,\n\nI've completed the code review task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nemma.davis",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "code review"
+  },
+  {
+    "id": "email_122",
+    "subject": "Status: standup",
+    "sender": "robert.jackson",
+    "recipients": [
+      "alex.kim",
+      "john.doe",
+      "william.king"
+    ],
+    "cc": [
+      "sophia.rodriguez",
+      "jessica.adams"
+    ],
+    "timestamp": "2025-08-04T23:28:07",
+    "body": "Hello,\n\nI've completed the standup task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nrobert.jackson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "standup"
+  },
+  {
+    "id": "email_123",
+    "subject": "Status: bug fix",
+    "sender": "john.doe",
+    "recipients": [
+      "kevin.martinez",
+      "william.king"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-19T07:33:40",
+    "body": "Hi team,\n\nI wanted to follow up on the bug fix we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\njohn.doe",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_124",
+    "subject": "Discussion: bug fix",
+    "sender": "nicole.thompson",
+    "recipients": [
+      "anna.white",
+      "chris.taylor"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-11T04:29:21",
+    "body": "Hi,\n\nI need your help with the bug fix issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nnicole.thompson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_125",
+    "subject": "Meeting: deployment",
+    "sender": "nicole.thompson",
+    "recipients": [
+      "tom.garcia",
+      "sophia.rodriguez",
+      "daniel.lewis"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-03T10:45:56",
+    "body": "Hi,\n\nI need your help with the deployment issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nnicole.thompson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_126",
+    "subject": "Weekly training report",
+    "sender": "emma.davis",
+    "recipients": [
+      "anna.white",
+      "kevin.martinez"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-16T08:01:45",
+    "body": "Hi team,\n\nWe need to discuss the training at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nemma.davis",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "training"
+  },
+  {
+    "id": "email_127",
+    "subject": "Product team - performance review",
+    "sender": "nicole.thompson",
+    "recipients": [
+      "john.doe",
+      "sophia.rodriguez",
+      "lisa.brown"
+    ],
+    "cc": [
+      "amanda.scott"
+    ],
+    "timestamp": "2025-07-05T18:22:19",
+    "body": "Hello,\n\nI'm sharing the latest update on performance review. Please see the attached document for more details.\n\nBest,\nnicole.thompson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_128",
+    "subject": "Question about deployment",
+    "sender": "rebecca.moore",
+    "recipients": [
+      "william.king"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-28T03:33:55",
+    "body": "Hello everyone,\n\nJust a quick update on the deployment project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nrebecca.moore",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_129",
+    "subject": "Discussion: meeting request",
+    "sender": "maya.singh",
+    "recipients": [
+      "chris.taylor",
+      "emma.davis"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-04T16:19:20",
+    "body": "Hi,\n\nI need your help with the meeting request issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nmaya.singh",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_130",
+    "subject": "Next steps for performance review",
+    "sender": "john.doe",
+    "recipients": [
+      "jennifer.lee",
+      "william.king",
+      "rebecca.moore"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-22T08:07:22",
+    "body": "Team,\n\nGreat work on the performance review this week! The marketing team is really making excellent progress.\n\nBest,\njohn.doe",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_131",
+    "subject": "Meeting: onboarding",
+    "sender": "william.king",
+    "recipients": [
+      "maya.singh",
+      "daniel.lewis"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-23T21:57:01",
+    "body": "Hi,\n\nI need your help with the onboarding issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nwilliam.king",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_132",
+    "subject": "FW: Performance Review - engineering team",
+    "sender": "maya.singh",
+    "recipients": [
+      "lisa.brown"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-08T09:53:36",
+    "body": "Hi team,\n\nWe need to discuss the performance review at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nmaya.singh",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_133",
+    "subject": "Discussion: onboarding",
+    "sender": "sophia.rodriguez",
+    "recipients": [
+      "alex.kim",
+      "emma.davis"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-18T19:14:18",
+    "body": "Hello,\n\nI've completed the onboarding task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nsophia.rodriguez",
+    "attachments": [],
+    "read": false,
+    "important": true,
+    "team": "legal",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_134",
+    "subject": "Status: bug fix",
+    "sender": "robert.jackson",
+    "recipients": [
+      "nicole.thompson"
+    ],
+    "cc": [
+      "sophia.rodriguez"
+    ],
+    "timestamp": "2025-06-26T17:58:46",
+    "body": "Team,\n\nGreat work on the bug fix this week! The design team is really making excellent progress.\n\nBest,\nrobert.jackson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_135",
+    "subject": "RE: Bug Fix",
+    "sender": "emma.davis",
+    "recipients": [
+      "jessica.adams",
+      "william.king",
+      "john.doe"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-13T20:45:41",
+    "body": "Hello,\n\nI've completed the bug fix task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nemma.davis",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_136",
+    "subject": "Status: bug fix",
+    "sender": "robert.jackson",
+    "recipients": [
+      "william.king",
+      "kevin.martinez"
+    ],
+    "cc": [
+      "raj.sharma"
+    ],
+    "timestamp": "2025-07-21T11:42:41",
+    "body": "Hello everyone,\n\nJust a quick update on the bug fix project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nrobert.jackson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_137",
+    "subject": "Devops team - sprint planning",
+    "sender": "amanda.scott",
+    "recipients": [
+      "anna.white"
+    ],
+    "cc": [
+      "priya.patel",
+      "chris.taylor"
+    ],
+    "timestamp": "2025-08-05T20:51:33",
+    "body": "Hi everyone,\n\nI have some questions about the sprint planning approach. Could someone from the devops team help clarify?\n\nThanks,\namanda.scott",
+    "attachments": [],
+    "read": false,
+    "important": true,
+    "team": "devops",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_138",
+    "subject": "Question about performance review",
+    "sender": "daniel.lewis",
+    "recipients": [
+      "alex.kim",
+      "amanda.scott"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-03T06:53:20",
+    "body": "Hello,\n\nI've completed the performance review task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\ndaniel.lewis",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_139",
+    "subject": "RE: Sprint Planning",
+    "sender": "tyler.green",
+    "recipients": [
+      "alex.kim",
+      "nicole.thompson",
+      "david.wilson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-24T18:25:18",
+    "body": "Hi,\n\nI need your help with the sprint planning issue. Could we schedule a meeting to discuss this further?\n\nThanks,\ntyler.green",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_140",
+    "subject": "Proposal for training",
+    "sender": "raj.sharma",
+    "recipients": [
+      "kevin.martinez"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-12T14:36:41",
+    "body": "Hi,\n\nI need your help with the training issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nraj.sharma",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "training"
+  },
+  {
+    "id": "email_141",
+    "subject": "Follow-up: onboarding",
+    "sender": "mark.anderson",
+    "recipients": [
+      "amanda.scott"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-08T05:06:26",
+    "body": "Hello everyone,\n\nJust a quick update on the onboarding project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nmark.anderson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "marketing",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_142",
+    "subject": "Urgent: training",
+    "sender": "david.wilson",
+    "recipients": [
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-22T19:48:56",
+    "body": "Hi team,\n\nWe need to discuss the training at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\ndavid.wilson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "training"
+  },
+  {
+    "id": "email_143",
+    "subject": "Follow-up: meeting request",
+    "sender": "sophia.rodriguez",
+    "recipients": [
+      "john.doe",
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-12T07:43:26",
+    "body": "Hello everyone,\n\nJust a quick update on the meeting request project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nsophia.rodriguez",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_144",
+    "subject": "Update on meeting request",
+    "sender": "maya.singh",
+    "recipients": [
+      "amanda.scott",
+      "sophia.rodriguez"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-14T17:37:06",
+    "body": "Hello,\n\nI've completed the meeting request task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nmaya.singh",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "legal",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_145",
+    "subject": "Status: deployment",
+    "sender": "jessica.adams",
+    "recipients": [
+      "nicole.thompson",
+      "mark.anderson",
+      "william.king"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-12T02:47:07",
+    "body": "Hi everyone,\n\nI have some questions about the deployment approach. Could someone from the hr team help clarify?\n\nThanks,\njessica.adams",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_146",
+    "subject": "Urgent: standup",
+    "sender": "amanda.scott",
+    "recipients": [
+      "sarah.chen",
+      "daniel.lewis",
+      "jessica.adams"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-19T17:11:30",
+    "body": "Hi,\n\nI need your help with the standup issue. Could we schedule a meeting to discuss this further?\n\nThanks,\namanda.scott",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "standup"
+  },
+  {
+    "id": "email_147",
+    "subject": "Status: sprint planning",
+    "sender": "raj.sharma",
+    "recipients": [
+      "jessica.adams",
+      "john.doe"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-27T21:40:33",
+    "body": "Hi everyone,\n\nI have some questions about the sprint planning approach. Could someone from the engineering team help clarify?\n\nThanks,\nraj.sharma",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_148",
+    "subject": "Feedback on meeting request",
+    "sender": "nicole.thompson",
+    "recipients": [
+      "kevin.martinez",
+      "william.king",
+      "jessica.adams"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-18T09:30:03",
+    "body": "Hello everyone,\n\nJust a quick update on the meeting request project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nnicole.thompson",
+    "attachments": [],
+    "read": false,
+    "important": true,
+    "team": "engineering",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_149",
+    "subject": "Urgent: interview",
+    "sender": "amanda.scott",
+    "recipients": [
+      "priya.patel",
+      "mike.johnson",
+      "chris.taylor"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-29T23:15:55",
+    "body": "Hi everyone,\n\nI have some questions about the interview approach. Could someone from the engineering team help clarify?\n\nThanks,\namanda.scott",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "interview"
+  },
+  {
+    "id": "email_150",
+    "subject": "Feedback on training",
+    "sender": "robert.jackson",
+    "recipients": [
+      "tom.garcia",
+      "sophia.rodriguez",
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-21T06:24:22",
+    "body": "Hi team,\n\nI wanted to follow up on the training we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nrobert.jackson",
+    "attachments": [],
+    "read": true,
+    "important": true,
+    "team": "hr",
+    "topic": "training"
+  },
+  {
+    "id": "email_151",
+    "subject": "Discussion: meeting request",
+    "sender": "emma.davis",
+    "recipients": [
+      "james.clark",
+      "lisa.brown"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-23T04:34:52",
+    "body": "Hello everyone,\n\nJust a quick update on the meeting request project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nemma.davis",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_152",
+    "subject": "Discussion: training",
+    "sender": "robert.jackson",
+    "recipients": [
+      "tom.garcia"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-27T05:59:30",
+    "body": "Hi team,\n\nI wanted to follow up on the training we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nrobert.jackson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "training"
+  },
+  {
+    "id": "email_153",
+    "subject": "Status: design review",
+    "sender": "daniel.lewis",
+    "recipients": [
+      "sophia.rodriguez",
+      "robert.jackson"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-24T08:21:21",
+    "body": "Hello,\n\nI've completed the design review task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\ndaniel.lewis",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "design review"
+  },
+  {
+    "id": "email_154",
+    "subject": "Devops team - sprint planning",
+    "sender": "raj.sharma",
+    "recipients": [
+      "chris.taylor",
+      "william.king",
+      "lisa.brown"
+    ],
+    "cc": [
+      "priya.patel",
+      "jennifer.lee"
+    ],
+    "timestamp": "2025-07-18T15:44:12",
+    "body": "Hello,\n\nI've completed the sprint planning task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nraj.sharma",
+    "attachments": [],
+    "read": false,
+    "important": true,
+    "team": "devops",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_155",
+    "subject": "Meeting: feature request",
+    "sender": "priya.patel",
+    "recipients": [
+      "mike.johnson",
+      "raj.sharma"
+    ],
+    "cc": [
+      "rebecca.moore",
+      "nicole.thompson"
+    ],
+    "timestamp": "2025-07-06T03:01:45",
+    "body": "Hi everyone,\n\nI have some questions about the feature request approach. Could someone from the marketing team help clarify?\n\nThanks,\npriya.patel",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_156",
+    "subject": "Question about training",
+    "sender": "william.king",
+    "recipients": [
+      "jessica.adams",
+      "anna.white"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-13T21:19:14",
+    "body": "Hello everyone,\n\nJust a quick update on the training project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nwilliam.king",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "training"
+  },
+  {
+    "id": "email_157",
+    "subject": "Follow-up: onboarding",
+    "sender": "amanda.scott",
+    "recipients": [
+      "william.king",
+      "mike.johnson"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-21T22:57:51",
+    "body": "Hi,\n\nI need your help with the onboarding issue. Could we schedule a meeting to discuss this further?\n\nThanks,\namanda.scott",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "legal",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_158",
+    "subject": "RE: Code Review",
+    "sender": "nicole.thompson",
+    "recipients": [
+      "chris.taylor",
+      "daniel.lewis",
+      "mark.anderson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-25T12:59:36",
+    "body": "Hello,\n\nI'm sharing the latest update on code review. Please see the attached document for more details.\n\nBest,\nnicole.thompson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "code review"
+  },
+  {
+    "id": "email_159",
+    "subject": "RE: Code Review",
+    "sender": "maya.singh",
+    "recipients": [
+      "nicole.thompson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-11T09:46:39",
+    "body": "Hello everyone,\n\nJust a quick update on the code review project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nmaya.singh",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "code review"
+  },
+  {
+    "id": "email_160",
+    "subject": "Update on sprint planning",
+    "sender": "maya.singh",
+    "recipients": [
+      "mike.johnson",
+      "tyler.green",
+      "sarah.chen"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-19T03:06:02",
+    "body": "Hi everyone,\n\nI have some questions about the sprint planning approach. Could someone from the engineering team help clarify?\n\nThanks,\nmaya.singh",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_161",
+    "subject": "Action required: onboarding",
+    "sender": "william.king",
+    "recipients": [
+      "emma.davis",
+      "alex.kim",
+      "mike.johnson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-09T20:22:26",
+    "body": "Hi everyone,\n\nI have some questions about the onboarding approach. Could someone from the devops team help clarify?\n\nThanks,\nwilliam.king",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_162",
+    "subject": "Next steps for standup",
+    "sender": "sarah.chen",
+    "recipients": [
+      "john.doe"
+    ],
+    "cc": [
+      "mark.anderson",
+      "priya.patel"
+    ],
+    "timestamp": "2025-06-26T17:02:07",
+    "body": "Hi team,\n\nWe need to discuss the standup at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nsarah.chen",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "standup"
+  },
+  {
+    "id": "email_163",
+    "subject": "Next steps for onboarding",
+    "sender": "daniel.lewis",
+    "recipients": [
+      "sarah.chen",
+      "anna.white",
+      "nicole.thompson"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-03T13:59:48",
+    "body": "Hi everyone,\n\nI have some questions about the onboarding approach. Could someone from the design team help clarify?\n\nThanks,\ndaniel.lewis",
+    "attachments": [],
+    "read": false,
+    "important": true,
+    "team": "design",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_164",
+    "subject": "Status: demo",
+    "sender": "emma.davis",
+    "recipients": [
+      "john.doe",
+      "kevin.martinez"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-28T23:25:06",
+    "body": "Hello everyone,\n\nJust a quick update on the demo project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nemma.davis",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "demo"
+  },
+  {
+    "id": "email_165",
+    "subject": "RE: Bug Fix",
+    "sender": "kevin.martinez",
+    "recipients": [
+      "amanda.scott"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-11T23:24:34",
+    "body": "Hello everyone,\n\nJust a quick update on the bug fix project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nkevin.martinez",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_166",
+    "subject": "Hr team - bug fix",
+    "sender": "mike.johnson",
+    "recipients": [
+      "john.doe",
+      "robert.jackson",
+      "mark.anderson"
+    ],
+    "cc": [
+      "priya.patel",
+      "chris.taylor"
+    ],
+    "timestamp": "2025-06-27T23:56:04",
+    "body": "Hello,\n\nI've completed the bug fix task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nmike.johnson",
+    "attachments": [],
+    "read": false,
+    "important": true,
+    "team": "hr",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_167",
+    "subject": "Follow-up: standup",
+    "sender": "maya.singh",
+    "recipients": [
+      "mike.johnson",
+      "anna.white",
+      "mark.anderson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-02T04:39:41",
+    "body": "Hi everyone,\n\nI have some questions about the standup approach. Could someone from the marketing team help clarify?\n\nThanks,\nmaya.singh",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "standup"
+  },
+  {
+    "id": "email_168",
+    "subject": "Feedback on feature request",
+    "sender": "jessica.adams",
+    "recipients": [
+      "rebecca.moore",
+      "james.clark",
+      "tyler.green"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-24T13:14:00",
+    "body": "Hi,\n\nI need your help with the feature request issue. Could we schedule a meeting to discuss this further?\n\nThanks,\njessica.adams",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_169",
+    "subject": "Status: feature request",
+    "sender": "robert.jackson",
+    "recipients": [
+      "sarah.chen",
+      "chris.taylor",
+      "amanda.scott"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-04T20:22:06",
+    "body": "Team,\n\nGreat work on the feature request this week! The legal team is really making excellent progress.\n\nBest,\nrobert.jackson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_170",
+    "subject": "Engineering team - design review",
+    "sender": "mike.johnson",
+    "recipients": [
+      "anna.white"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-27T08:30:01",
+    "body": "Hi everyone,\n\nI have some questions about the design review approach. Could someone from the engineering team help clarify?\n\nThanks,\nmike.johnson",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "design review"
+  },
+  {
+    "id": "email_171",
+    "subject": "Product team - feature request",
+    "sender": "sarah.chen",
+    "recipients": [
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-16T04:16:14",
+    "body": "Hi team,\n\nI wanted to follow up on the feature request we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nsarah.chen",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_172",
+    "subject": "Discussion: code review",
+    "sender": "priya.patel",
+    "recipients": [
+      "jennifer.lee",
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-16T14:18:16",
+    "body": "Hello,\n\nI've completed the code review task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\npriya.patel",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "code review"
+  },
+  {
+    "id": "email_173",
+    "subject": "Question about performance review",
+    "sender": "priya.patel",
+    "recipients": [
+      "lisa.brown"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-29T11:58:47",
+    "body": "Hi,\n\nI need your help with the performance review issue. Could we schedule a meeting to discuss this further?\n\nThanks,\npriya.patel",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_174",
+    "subject": "Next steps for bug fix",
+    "sender": "amanda.scott",
+    "recipients": [
+      "rebecca.moore",
+      "maya.singh"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-08T09:39:03",
+    "body": "Hello,\n\nI've completed the bug fix task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\namanda.scott",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_175",
+    "subject": "Follow-up: training",
+    "sender": "emma.davis",
+    "recipients": [
+      "david.wilson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-01T09:13:22",
+    "body": "Team,\n\nGreat work on the training this week! The product team is really making excellent progress.\n\nBest,\nemma.davis",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "training"
+  },
+  {
+    "id": "email_176",
+    "subject": "Weekly meeting request report",
+    "sender": "lisa.brown",
+    "recipients": [
+      "priya.patel"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-24T16:33:01",
+    "body": "Hi team,\n\nI wanted to follow up on the meeting request we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nlisa.brown",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "marketing",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_177",
+    "subject": "Feedback on feature request",
+    "sender": "john.doe",
+    "recipients": [
+      "anna.white",
+      "amanda.scott"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-20T21:24:32",
+    "body": "Hello,\n\nI'm sharing the latest update on feature request. Please see the attached document for more details.\n\nBest,\njohn.doe",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_178",
+    "subject": "Proposal for training",
+    "sender": "maya.singh",
+    "recipients": [
+      "david.wilson",
+      "lisa.brown"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-22T06:47:19",
+    "body": "Hi,\n\nI need your help with the training issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nmaya.singh",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "training"
+  },
+  {
+    "id": "email_179",
+    "subject": "Next steps for training",
+    "sender": "maya.singh",
+    "recipients": [
+      "kevin.martinez",
+      "raj.sharma"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-20T22:47:00",
+    "body": "Hi team,\n\nI wanted to follow up on the training we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nmaya.singh",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "devops",
+    "topic": "training"
+  },
+  {
+    "id": "email_180",
+    "subject": "Feedback on design review",
+    "sender": "rebecca.moore",
+    "recipients": [
+      "tyler.green",
+      "anna.white",
+      "david.wilson"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-14T14:48:02",
+    "body": "Team,\n\nGreat work on the design review this week! The marketing team is really making excellent progress.\n\nBest,\nrebecca.moore",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "marketing",
+    "topic": "design review"
+  },
+  {
+    "id": "email_181",
+    "subject": "Question about feature request",
+    "sender": "mark.anderson",
+    "recipients": [
+      "nicole.thompson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-11T06:28:55",
+    "body": "Hi team,\n\nWe need to discuss the feature request at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nmark.anderson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_182",
+    "subject": "Weekly sprint planning report",
+    "sender": "priya.patel",
+    "recipients": [
+      "sarah.chen",
+      "tyler.green",
+      "daniel.lewis"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-28T08:34:08",
+    "body": "Hi team,\n\nWe need to discuss the sprint planning at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\npriya.patel",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_183",
+    "subject": "Action required: feature request",
+    "sender": "raj.sharma",
+    "recipients": [
+      "sophia.rodriguez",
+      "alex.kim"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-02T06:56:58",
+    "body": "Hi team,\n\nI wanted to follow up on the feature request we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nraj.sharma",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_184",
+    "subject": "Follow-up: interview",
+    "sender": "sophia.rodriguez",
+    "recipients": [
+      "nicole.thompson",
+      "alex.kim"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-27T15:48:40",
+    "body": "Hi everyone,\n\nI have some questions about the interview approach. Could someone from the devops team help clarify?\n\nThanks,\nsophia.rodriguez",
+    "attachments": [],
+    "read": true,
+    "important": true,
+    "team": "devops",
+    "topic": "interview"
+  },
+  {
+    "id": "email_185",
+    "subject": "RE: Sprint Planning",
+    "sender": "jennifer.lee",
+    "recipients": [
+      "amanda.scott",
+      "daniel.lewis"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-08T21:39:16",
+    "body": "Hello,\n\nI'm sharing the latest update on sprint planning. Please see the attached document for more details.\n\nBest,\njennifer.lee",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_186",
+    "subject": "Follow-up: sprint planning",
+    "sender": "john.doe",
+    "recipients": [
+      "daniel.lewis",
+      "alex.kim",
+      "sophia.rodriguez"
+    ],
+    "cc": [
+      "lisa.brown",
+      "tyler.green"
+    ],
+    "timestamp": "2025-07-21T19:59:07",
+    "body": "Team,\n\nGreat work on the sprint planning this week! The engineering team is really making excellent progress.\n\nBest,\njohn.doe",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_187",
+    "subject": "Update on performance review",
+    "sender": "alex.kim",
+    "recipients": [
+      "chris.taylor",
+      "amanda.scott",
+      "rebecca.moore"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-28T13:16:49",
+    "body": "Hi team,\n\nI wanted to follow up on the performance review we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nalex.kim",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_188",
+    "subject": "Weekly training report",
+    "sender": "kevin.martinez",
+    "recipients": [
+      "nicole.thompson"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-04T19:10:57",
+    "body": "Hello,\n\nI'm sharing the latest update on training. Please see the attached document for more details.\n\nBest,\nkevin.martinez",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "training"
+  },
+  {
+    "id": "email_189",
+    "subject": "FW: Deployment - design team",
+    "sender": "tom.garcia",
+    "recipients": [
+      "kevin.martinez",
+      "rebecca.moore"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-20T06:11:04",
+    "body": "Hi everyone,\n\nI have some questions about the deployment approach. Could someone from the design team help clarify?\n\nThanks,\ntom.garcia",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_190",
+    "subject": "Urgent: design review",
+    "sender": "sophia.rodriguez",
+    "recipients": [
+      "priya.patel"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-15T13:08:35",
+    "body": "Hello,\n\nI'm sharing the latest update on design review. Please see the attached document for more details.\n\nBest,\nsophia.rodriguez",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "design review"
+  },
+  {
+    "id": "email_191",
+    "subject": "Proposal for design review",
+    "sender": "william.king",
+    "recipients": [
+      "kevin.martinez"
+    ],
+    "cc": [
+      "raj.sharma"
+    ],
+    "timestamp": "2025-07-25T05:14:54",
+    "body": "Team,\n\nGreat work on the design review this week! The legal team is really making excellent progress.\n\nBest,\nwilliam.king",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "design review"
+  },
+  {
+    "id": "email_192",
+    "subject": "Urgent: interview",
+    "sender": "john.doe",
+    "recipients": [
+      "mark.anderson",
+      "emma.davis",
+      "maya.singh"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-09T23:32:13",
+    "body": "Hi everyone,\n\nI have some questions about the interview approach. Could someone from the engineering team help clarify?\n\nThanks,\njohn.doe",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "interview"
+  },
+  {
+    "id": "email_193",
+    "subject": "Discussion: training",
+    "sender": "lisa.brown",
+    "recipients": [
+      "raj.sharma"
+    ],
+    "cc": [
+      "jessica.adams"
+    ],
+    "timestamp": "2025-08-14T02:48:46",
+    "body": "Hello,\n\nI'm sharing the latest update on training. Please see the attached document for more details.\n\nBest,\nlisa.brown",
+    "attachments": [],
+    "read": true,
+    "important": true,
+    "team": "legal",
+    "topic": "training"
+  },
+  {
+    "id": "email_194",
+    "subject": "Meeting: project update",
+    "sender": "tom.garcia",
+    "recipients": [
+      "emma.davis",
+      "alex.kim",
+      "tyler.green"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-03T07:47:11",
+    "body": "Hi team,\n\nI wanted to follow up on the project update we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\ntom.garcia",
+    "attachments": [],
+    "read": true,
+    "important": true,
+    "team": "design",
+    "topic": "project update"
+  },
+  {
+    "id": "email_195",
+    "subject": "Urgent: feature request",
+    "sender": "sarah.chen",
+    "recipients": [
+      "mike.johnson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-29T15:45:09",
+    "body": "Hello everyone,\n\nJust a quick update on the feature request project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nsarah.chen",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_196",
+    "subject": "Hr team - performance review",
+    "sender": "nicole.thompson",
+    "recipients": [
+      "alex.kim",
+      "john.doe"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-11T23:29:52",
+    "body": "Hi,\n\nI need your help with the performance review issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nnicole.thompson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_197",
+    "subject": "Update on sprint planning",
+    "sender": "tom.garcia",
+    "recipients": [
+      "raj.sharma",
+      "mike.johnson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-30T11:33:22",
+    "body": "Hello,\n\nI've completed the sprint planning task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\ntom.garcia",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_198",
+    "subject": "Question about sprint planning",
+    "sender": "james.clark",
+    "recipients": [
+      "tyler.green",
+      "jessica.adams"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-21T05:19:19",
+    "body": "Hi team,\n\nI wanted to follow up on the sprint planning we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\njames.clark",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_199",
+    "subject": "Next steps for design review",
+    "sender": "david.wilson",
+    "recipients": [
+      "jessica.adams",
+      "rebecca.moore",
+      "amanda.scott"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-19T07:50:00",
+    "body": "Hello,\n\nI've completed the design review task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\ndavid.wilson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "design review"
+  },
+  {
+    "id": "email_200",
+    "subject": "Status: feature request",
+    "sender": "daniel.lewis",
+    "recipients": [
+      "nicole.thompson",
+      "jessica.adams"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-24T21:16:55",
+    "body": "Hi team,\n\nI wanted to follow up on the feature request we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\ndaniel.lewis",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_201",
+    "subject": "Meeting: bug fix",
+    "sender": "david.wilson",
+    "recipients": [
+      "nicole.thompson",
+      "jennifer.lee"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-22T01:05:07",
+    "body": "Hello,\n\nI've completed the bug fix task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\ndavid.wilson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_202",
+    "subject": "Urgent: code review",
+    "sender": "robert.jackson",
+    "recipients": [
+      "james.clark",
+      "mark.anderson"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-24T08:21:16",
+    "body": "Team,\n\nGreat work on the code review this week! The marketing team is really making excellent progress.\n\nBest,\nrobert.jackson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "code review"
+  },
+  {
+    "id": "email_203",
+    "subject": "Proposal for standup",
+    "sender": "david.wilson",
+    "recipients": [
+      "amanda.scott",
+      "jennifer.lee"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-30T19:40:58",
+    "body": "Hi team,\n\nWe need to discuss the standup at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\ndavid.wilson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "standup"
+  },
+  {
+    "id": "email_204",
+    "subject": "Proposal for training",
+    "sender": "anna.white",
+    "recipients": [
+      "mark.anderson",
+      "david.wilson",
+      "robert.jackson"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-15T18:38:12",
+    "body": "Hi,\n\nI need your help with the training issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nanna.white",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "training"
+  },
+  {
+    "id": "email_205",
+    "subject": "Follow-up: onboarding",
+    "sender": "priya.patel",
+    "recipients": [
+      "sophia.rodriguez"
+    ],
+    "cc": [
+      "jessica.adams"
+    ],
+    "timestamp": "2025-07-23T15:26:45",
+    "body": "Hi team,\n\nI wanted to follow up on the onboarding we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\npriya.patel",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_206",
+    "subject": "Feedback on code review",
+    "sender": "raj.sharma",
+    "recipients": [
+      "robert.jackson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-12T16:32:07",
+    "body": "Hello everyone,\n\nJust a quick update on the code review project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nraj.sharma",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "legal",
+    "topic": "code review"
+  },
+  {
+    "id": "email_207",
+    "subject": "Action required: deployment",
+    "sender": "james.clark",
+    "recipients": [
+      "tom.garcia"
+    ],
+    "cc": [
+      "sophia.rodriguez"
+    ],
+    "timestamp": "2025-06-26T19:58:25",
+    "body": "Hi team,\n\nI wanted to follow up on the deployment we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\njames.clark",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_208",
+    "subject": "Status: design review",
+    "sender": "priya.patel",
+    "recipients": [
+      "david.wilson",
+      "james.clark",
+      "kevin.martinez"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-23T22:28:45",
+    "body": "Team,\n\nGreat work on the design review this week! The marketing team is really making excellent progress.\n\nBest,\npriya.patel",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "design review"
+  },
+  {
+    "id": "email_209",
+    "subject": "Urgent: training",
+    "sender": "maya.singh",
+    "recipients": [
+      "raj.sharma",
+      "daniel.lewis"
+    ],
+    "cc": [
+      "david.wilson"
+    ],
+    "timestamp": "2025-07-14T19:30:11",
+    "body": "Hello,\n\nI'm sharing the latest update on training. Please see the attached document for more details.\n\nBest,\nmaya.singh",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "training"
+  },
+  {
+    "id": "email_210",
+    "subject": "Urgent: code review",
+    "sender": "jessica.adams",
+    "recipients": [
+      "kevin.martinez",
+      "anna.white"
+    ],
+    "cc": [
+      "tom.garcia",
+      "daniel.lewis"
+    ],
+    "timestamp": "2025-07-15T07:11:25",
+    "body": "Team,\n\nGreat work on the code review this week! The devops team is really making excellent progress.\n\nBest,\njessica.adams",
+    "attachments": [],
+    "read": false,
+    "important": true,
+    "team": "devops",
+    "topic": "code review"
+  },
+  {
+    "id": "email_211",
+    "subject": "Follow-up: feature request",
+    "sender": "jennifer.lee",
+    "recipients": [
+      "alex.kim",
+      "daniel.lewis"
+    ],
+    "cc": [
+      "john.doe"
+    ],
+    "timestamp": "2025-07-15T12:26:28",
+    "body": "Hello,\n\nI'm sharing the latest update on feature request. Please see the attached document for more details.\n\nBest,\njennifer.lee",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_212",
+    "subject": "Weekly design review report",
+    "sender": "william.king",
+    "recipients": [
+      "emma.davis",
+      "mike.johnson",
+      "daniel.lewis"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-09T00:52:48",
+    "body": "Hi team,\n\nI wanted to follow up on the design review we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nwilliam.king",
+    "attachments": [],
+    "read": true,
+    "important": true,
+    "team": "marketing",
+    "topic": "design review"
+  },
+  {
+    "id": "email_213",
+    "subject": "Status: standup",
+    "sender": "anna.white",
+    "recipients": [
+      "nicole.thompson",
+      "robert.jackson",
+      "william.king"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-22T08:55:41",
+    "body": "Team,\n\nGreat work on the standup this week! The product team is really making excellent progress.\n\nBest,\nanna.white",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "standup"
+  },
+  {
+    "id": "email_214",
+    "subject": "Question about standup",
+    "sender": "lisa.brown",
+    "recipients": [
+      "william.king",
+      "raj.sharma",
+      "mark.anderson"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-22T12:16:57",
+    "body": "Hi team,\n\nI wanted to follow up on the standup we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nlisa.brown",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "standup"
+  },
+  {
+    "id": "email_215",
+    "subject": "Urgent: bug fix",
+    "sender": "daniel.lewis",
+    "recipients": [
+      "william.king",
+      "raj.sharma"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-05T16:59:08",
+    "body": "Hello,\n\nI'm sharing the latest update on bug fix. Please see the attached document for more details.\n\nBest,\ndaniel.lewis",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_216",
+    "subject": "Weekly performance review report",
+    "sender": "tom.garcia",
+    "recipients": [
+      "priya.patel",
+      "maya.singh"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-02T18:35:23",
+    "body": "Hi everyone,\n\nI have some questions about the performance review approach. Could someone from the design team help clarify?\n\nThanks,\ntom.garcia",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_217",
+    "subject": "RE: Deployment",
+    "sender": "lisa.brown",
+    "recipients": [
+      "nicole.thompson",
+      "mark.anderson"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-02T08:29:47",
+    "body": "Hi team,\n\nI wanted to follow up on the deployment we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nlisa.brown",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_218",
+    "subject": "Action required: bug fix",
+    "sender": "tom.garcia",
+    "recipients": [
+      "sophia.rodriguez",
+      "raj.sharma",
+      "emma.davis"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-04T07:33:05",
+    "body": "Hi team,\n\nI wanted to follow up on the bug fix we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\ntom.garcia",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_219",
+    "subject": "Meeting: interview",
+    "sender": "chris.taylor",
+    "recipients": [
+      "tyler.green",
+      "sarah.chen"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-11T13:14:26",
+    "body": "Hi,\n\nI need your help with the interview issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nchris.taylor",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "interview"
+  },
+  {
+    "id": "email_220",
+    "subject": "Feedback on training",
+    "sender": "raj.sharma",
+    "recipients": [
+      "nicole.thompson"
+    ],
+    "cc": [
+      "emma.davis",
+      "sophia.rodriguez"
+    ],
+    "timestamp": "2025-08-15T07:04:08",
+    "body": "Hi everyone,\n\nI have some questions about the training approach. Could someone from the engineering team help clarify?\n\nThanks,\nraj.sharma",
+    "attachments": [],
+    "read": false,
+    "important": true,
+    "team": "engineering",
+    "topic": "training"
+  },
+  {
+    "id": "email_221",
+    "subject": "Next steps for onboarding",
+    "sender": "priya.patel",
+    "recipients": [
+      "tom.garcia"
+    ],
+    "cc": [
+      "james.clark"
+    ],
+    "timestamp": "2025-08-04T09:44:55",
+    "body": "Team,\n\nGreat work on the onboarding this week! The marketing team is really making excellent progress.\n\nBest,\npriya.patel",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "marketing",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_222",
+    "subject": "Status: performance review",
+    "sender": "raj.sharma",
+    "recipients": [
+      "tom.garcia",
+      "kevin.martinez"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-18T08:00:07",
+    "body": "Hi team,\n\nI wanted to follow up on the performance review we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nraj.sharma",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_223",
+    "subject": "Next steps for performance review",
+    "sender": "tyler.green",
+    "recipients": [
+      "sophia.rodriguez"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-28T12:26:31",
+    "body": "Team,\n\nGreat work on the performance review this week! The legal team is really making excellent progress.\n\nBest,\ntyler.green",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "legal",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_224",
+    "subject": "Feedback on meeting request",
+    "sender": "kevin.martinez",
+    "recipients": [
+      "mike.johnson"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-21T19:07:26",
+    "body": "Hello,\n\nI've completed the meeting request task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nkevin.martinez",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_225",
+    "subject": "Urgent: interview",
+    "sender": "lisa.brown",
+    "recipients": [
+      "emma.davis"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-22T22:47:30",
+    "body": "Hi everyone,\n\nI have some questions about the interview approach. Could someone from the design team help clarify?\n\nThanks,\nlisa.brown",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "interview"
+  },
+  {
+    "id": "email_226",
+    "subject": "Status: bug fix",
+    "sender": "william.king",
+    "recipients": [
+      "tyler.green",
+      "raj.sharma",
+      "anna.white"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-13T00:40:12",
+    "body": "Hello everyone,\n\nJust a quick update on the bug fix project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nwilliam.king",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_227",
+    "subject": "Follow-up: performance review",
+    "sender": "jessica.adams",
+    "recipients": [
+      "daniel.lewis",
+      "chris.taylor"
+    ],
+    "cc": [
+      "alex.kim",
+      "tom.garcia"
+    ],
+    "timestamp": "2025-08-08T07:31:00",
+    "body": "Hello,\n\nI'm sharing the latest update on performance review. Please see the attached document for more details.\n\nBest,\njessica.adams",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_228",
+    "subject": "Devops team - sprint planning",
+    "sender": "alex.kim",
+    "recipients": [
+      "maya.singh",
+      "nicole.thompson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-12T08:32:19",
+    "body": "Hi team,\n\nI wanted to follow up on the sprint planning we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nalex.kim",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "devops",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_229",
+    "subject": "Discussion: bug fix",
+    "sender": "alex.kim",
+    "recipients": [
+      "emma.davis",
+      "nicole.thompson"
+    ],
+    "cc": [
+      "jessica.adams"
+    ],
+    "timestamp": "2025-06-29T15:16:14",
+    "body": "Hello,\n\nI've completed the bug fix task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nalex.kim",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_230",
+    "subject": "RE: Code Review",
+    "sender": "mark.anderson",
+    "recipients": [
+      "chris.taylor"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-10T01:09:48",
+    "body": "Hi,\n\nI need your help with the code review issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nmark.anderson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "code review"
+  },
+  {
+    "id": "email_231",
+    "subject": "Meeting: standup",
+    "sender": "raj.sharma",
+    "recipients": [
+      "nicole.thompson",
+      "james.clark",
+      "mike.johnson"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-21T04:49:47",
+    "body": "Team,\n\nGreat work on the standup this week! The hr team is really making excellent progress.\n\nBest,\nraj.sharma",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "hr",
+    "topic": "standup"
+  },
+  {
+    "id": "email_232",
+    "subject": "Update on bug fix",
+    "sender": "james.clark",
+    "recipients": [
+      "sarah.chen"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-10T17:40:11",
+    "body": "Hello,\n\nI've completed the bug fix task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\njames.clark",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "marketing",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_233",
+    "subject": "Discussion: training",
+    "sender": "priya.patel",
+    "recipients": [
+      "amanda.scott"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-24T08:14:40",
+    "body": "Hi,\n\nI need your help with the training issue. Could we schedule a meeting to discuss this further?\n\nThanks,\npriya.patel",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "training"
+  },
+  {
+    "id": "email_234",
+    "subject": "Urgent: training",
+    "sender": "william.king",
+    "recipients": [
+      "priya.patel",
+      "rebecca.moore"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-07T09:08:35",
+    "body": "Hello everyone,\n\nJust a quick update on the training project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nwilliam.king",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "training"
+  },
+  {
+    "id": "email_235",
+    "subject": "Product team - training",
+    "sender": "david.wilson",
+    "recipients": [
+      "tyler.green",
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-09T11:07:38",
+    "body": "Hi team,\n\nWe need to discuss the training at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\ndavid.wilson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "training"
+  },
+  {
+    "id": "email_236",
+    "subject": "Urgent: performance review",
+    "sender": "chris.taylor",
+    "recipients": [
+      "rebecca.moore",
+      "daniel.lewis",
+      "sophia.rodriguez"
+    ],
+    "cc": [
+      "anna.white"
+    ],
+    "timestamp": "2025-07-14T23:49:22",
+    "body": "Hello,\n\nI'm sharing the latest update on performance review. Please see the attached document for more details.\n\nBest,\nchris.taylor",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_237",
+    "subject": "Urgent: training",
+    "sender": "robert.jackson",
+    "recipients": [
+      "john.doe"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-06T12:57:50",
+    "body": "Team,\n\nGreat work on the training this week! The devops team is really making excellent progress.\n\nBest,\nrobert.jackson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "devops",
+    "topic": "training"
+  },
+  {
+    "id": "email_238",
+    "subject": "Next steps for performance review",
+    "sender": "alex.kim",
+    "recipients": [
+      "david.wilson",
+      "mark.anderson"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-03T21:32:41",
+    "body": "Hi team,\n\nWe need to discuss the performance review at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nalex.kim",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_239",
+    "subject": "Weekly design review report",
+    "sender": "robert.jackson",
+    "recipients": [
+      "tyler.green"
+    ],
+    "cc": [
+      "sophia.rodriguez"
+    ],
+    "timestamp": "2025-07-10T10:41:59",
+    "body": "Team,\n\nGreat work on the design review this week! The design team is really making excellent progress.\n\nBest,\nrobert.jackson",
+    "attachments": [],
+    "read": false,
+    "important": true,
+    "team": "design",
+    "topic": "design review"
+  },
+  {
+    "id": "email_240",
+    "subject": "Discussion: project update",
+    "sender": "emma.davis",
+    "recipients": [
+      "kevin.martinez"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-29T11:56:05",
+    "body": "Hello,\n\nI've completed the project update task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nemma.davis",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "project update"
+  },
+  {
+    "id": "email_241",
+    "subject": "Update on performance review",
+    "sender": "emma.davis",
+    "recipients": [
+      "anna.white",
+      "raj.sharma",
+      "daniel.lewis"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-17T02:15:16",
+    "body": "Hi,\n\nI need your help with the performance review issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nemma.davis",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_242",
+    "subject": "RE: Design Review",
+    "sender": "nicole.thompson",
+    "recipients": [
+      "kevin.martinez",
+      "tom.garcia"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-24T20:20:42",
+    "body": "Hi team,\n\nI wanted to follow up on the design review we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nnicole.thompson",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "design review"
+  },
+  {
+    "id": "email_243",
+    "subject": "Meeting: performance review",
+    "sender": "emma.davis",
+    "recipients": [
+      "kevin.martinez"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-29T08:48:58",
+    "body": "Hi team,\n\nWe need to discuss the performance review at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\nemma.davis",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_244",
+    "subject": "Status: demo",
+    "sender": "lisa.brown",
+    "recipients": [
+      "nicole.thompson"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-03T00:14:33",
+    "body": "Hi everyone,\n\nI have some questions about the demo approach. Could someone from the product team help clarify?\n\nThanks,\nlisa.brown",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "demo"
+  },
+  {
+    "id": "email_245",
+    "subject": "Urgent: demo",
+    "sender": "sophia.rodriguez",
+    "recipients": [
+      "william.king",
+      "amanda.scott"
+    ],
+    "cc": [
+      "alex.kim"
+    ],
+    "timestamp": "2025-08-16T01:22:50",
+    "body": "Hi team,\n\nI wanted to follow up on the demo we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nsophia.rodriguez",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "demo"
+  },
+  {
+    "id": "email_246",
+    "subject": "Status: deployment",
+    "sender": "rebecca.moore",
+    "recipients": [
+      "david.wilson",
+      "anna.white"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-22T20:30:26",
+    "body": "Hello,\n\nI've completed the deployment task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nrebecca.moore",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_247",
+    "subject": "Feedback on deployment",
+    "sender": "rebecca.moore",
+    "recipients": [
+      "maya.singh",
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-20T13:36:55",
+    "body": "Hi,\n\nI need your help with the deployment issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nrebecca.moore",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "devops",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_248",
+    "subject": "Weekly interview report",
+    "sender": "robert.jackson",
+    "recipients": [
+      "tom.garcia",
+      "william.king",
+      "kevin.martinez"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-15T09:36:42",
+    "body": "Hi everyone,\n\nI have some questions about the interview approach. Could someone from the product team help clarify?\n\nThanks,\nrobert.jackson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "interview"
+  },
+  {
+    "id": "email_249",
+    "subject": "Next steps for design review",
+    "sender": "emma.davis",
+    "recipients": [
+      "james.clark",
+      "nicole.thompson"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-06T00:47:43",
+    "body": "Hello,\n\nI've completed the design review task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nemma.davis",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "design review"
+  },
+  {
+    "id": "email_250",
+    "subject": "Question about bug fix",
+    "sender": "rebecca.moore",
+    "recipients": [
+      "chris.taylor",
+      "anna.white",
+      "sarah.chen"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-31T06:50:39",
+    "body": "Hello,\n\nI've completed the bug fix task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nrebecca.moore",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_251",
+    "subject": "Next steps for training",
+    "sender": "amanda.scott",
+    "recipients": [
+      "lisa.brown",
+      "sarah.chen"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-23T04:40:27",
+    "body": "Hello,\n\nI'm sharing the latest update on training. Please see the attached document for more details.\n\nBest,\namanda.scott",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "devops",
+    "topic": "training"
+  },
+  {
+    "id": "email_252",
+    "subject": "Meeting: deployment",
+    "sender": "mike.johnson",
+    "recipients": [
+      "sophia.rodriguez"
+    ],
+    "cc": [
+      "sarah.chen",
+      "anna.white"
+    ],
+    "timestamp": "2025-07-19T04:58:41",
+    "body": "Team,\n\nGreat work on the deployment this week! The legal team is really making excellent progress.\n\nBest,\nmike.johnson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "legal",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_253",
+    "subject": "Question about sprint planning",
+    "sender": "raj.sharma",
+    "recipients": [
+      "maya.singh",
+      "anna.white"
+    ],
+    "cc": [
+      "john.doe",
+      "william.king"
+    ],
+    "timestamp": "2025-08-14T22:48:55",
+    "body": "Hi everyone,\n\nI have some questions about the sprint planning approach. Could someone from the devops team help clarify?\n\nThanks,\nraj.sharma",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "devops",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_254",
+    "subject": "Question about interview",
+    "sender": "kevin.martinez",
+    "recipients": [
+      "tom.garcia",
+      "james.clark"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-08T01:35:47",
+    "body": "Hi team,\n\nI wanted to follow up on the interview we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nkevin.martinez",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "interview"
+  },
+  {
+    "id": "email_255",
+    "subject": "Action required: deployment",
+    "sender": "rebecca.moore",
+    "recipients": [
+      "chris.taylor",
+      "david.wilson"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-18T19:53:58",
+    "body": "Hi team,\n\nI wanted to follow up on the deployment we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nrebecca.moore",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "legal",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_256",
+    "subject": "Discussion: code review",
+    "sender": "david.wilson",
+    "recipients": [
+      "maya.singh",
+      "emma.davis"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-03T12:54:27",
+    "body": "Hi everyone,\n\nI have some questions about the code review approach. Could someone from the product team help clarify?\n\nThanks,\ndavid.wilson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "code review"
+  },
+  {
+    "id": "email_257",
+    "subject": "RE: Feature Request",
+    "sender": "sophia.rodriguez",
+    "recipients": [
+      "chris.taylor",
+      "anna.white"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-26T04:07:46",
+    "body": "Hello,\n\nI'm sharing the latest update on feature request. Please see the attached document for more details.\n\nBest,\nsophia.rodriguez",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_258",
+    "subject": "Engineering team - feature request",
+    "sender": "anna.white",
+    "recipients": [
+      "jennifer.lee",
+      "raj.sharma",
+      "daniel.lewis"
+    ],
+    "cc": [
+      "maya.singh"
+    ],
+    "timestamp": "2025-08-06T15:29:43",
+    "body": "Hello,\n\nI'm sharing the latest update on feature request. Please see the attached document for more details.\n\nBest,\nanna.white",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_259",
+    "subject": "RE: Meeting Request",
+    "sender": "daniel.lewis",
+    "recipients": [
+      "anna.white"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-13T17:19:09",
+    "body": "Hello,\n\nI'm sharing the latest update on meeting request. Please see the attached document for more details.\n\nBest,\ndaniel.lewis",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_260",
+    "subject": "Action required: meeting request",
+    "sender": "anna.white",
+    "recipients": [
+      "nicole.thompson",
+      "david.wilson",
+      "maya.singh"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-26T08:37:48",
+    "body": "Hello everyone,\n\nJust a quick update on the meeting request project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nanna.white",
+    "attachments": [],
+    "read": true,
+    "important": true,
+    "team": "legal",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_261",
+    "subject": "FW: Design Review - product team",
+    "sender": "kevin.martinez",
+    "recipients": [
+      "sarah.chen",
+      "mark.anderson"
+    ],
+    "cc": [
+      "alex.kim",
+      "jennifer.lee"
+    ],
+    "timestamp": "2025-06-26T17:42:31",
+    "body": "Team,\n\nGreat work on the design review this week! The product team is really making excellent progress.\n\nBest,\nkevin.martinez",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "design review"
+  },
+  {
+    "id": "email_262",
+    "subject": "Feedback on sprint planning",
+    "sender": "kevin.martinez",
+    "recipients": [
+      "tom.garcia",
+      "chris.taylor"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-15T12:18:58",
+    "body": "Hi team,\n\nI wanted to follow up on the sprint planning we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nkevin.martinez",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "sprint planning"
+  },
+  {
+    "id": "email_263",
+    "subject": "Next steps for deployment",
+    "sender": "rebecca.moore",
+    "recipients": [
+      "jennifer.lee"
+    ],
+    "cc": [
+      "kevin.martinez"
+    ],
+    "timestamp": "2025-08-03T18:00:02",
+    "body": "Hello,\n\nI've completed the deployment task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nrebecca.moore",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_264",
+    "subject": "Feedback on bug fix",
+    "sender": "anna.white",
+    "recipients": [
+      "mike.johnson",
+      "sophia.rodriguez"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-10T13:06:52",
+    "body": "Team,\n\nGreat work on the bug fix this week! The engineering team is really making excellent progress.\n\nBest,\nanna.white",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_265",
+    "subject": "Weekly code review report",
+    "sender": "priya.patel",
+    "recipients": [
+      "mark.anderson",
+      "anna.white"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-19T16:07:40",
+    "body": "Hello,\n\nI've completed the code review task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\npriya.patel",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "code review"
+  },
+  {
+    "id": "email_266",
+    "subject": "Follow-up: interview",
+    "sender": "robert.jackson",
+    "recipients": [
+      "mike.johnson"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-25T17:11:14",
+    "body": "Hello everyone,\n\nJust a quick update on the interview project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nrobert.jackson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "interview"
+  },
+  {
+    "id": "email_267",
+    "subject": "Follow-up: bug fix",
+    "sender": "maya.singh",
+    "recipients": [
+      "rebecca.moore",
+      "anna.white"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-09T15:18:44",
+    "body": "Hi everyone,\n\nI have some questions about the bug fix approach. Could someone from the hr team help clarify?\n\nThanks,\nmaya.singh",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_268",
+    "subject": "Status: design review",
+    "sender": "amanda.scott",
+    "recipients": [
+      "mark.anderson",
+      "jennifer.lee"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-15T10:41:00",
+    "body": "Hi team,\n\nWe need to discuss the design review at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\namanda.scott",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "design review"
+  },
+  {
+    "id": "email_269",
+    "subject": "Discussion: interview",
+    "sender": "mark.anderson",
+    "recipients": [
+      "sophia.rodriguez",
+      "priya.patel"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-05T09:35:53",
+    "body": "Hi team,\n\nI wanted to follow up on the interview we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nmark.anderson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "hr",
+    "topic": "interview"
+  },
+  {
+    "id": "email_270",
+    "subject": "FW: Onboarding - engineering team",
+    "sender": "mike.johnson",
+    "recipients": [
+      "nicole.thompson",
+      "jessica.adams"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-06T18:31:49",
+    "body": "Team,\n\nGreat work on the onboarding this week! The engineering team is really making excellent progress.\n\nBest,\nmike.johnson",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_271",
+    "subject": "FW: Feature Request - design team",
+    "sender": "raj.sharma",
+    "recipients": [
+      "tyler.green",
+      "mike.johnson",
+      "jennifer.lee"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-08T20:46:07",
+    "body": "Hello,\n\nI'm sharing the latest update on feature request. Please see the attached document for more details.\n\nBest,\nraj.sharma",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_272",
+    "subject": "Feedback on project update",
+    "sender": "david.wilson",
+    "recipients": [
+      "lisa.brown"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-20T07:16:49",
+    "body": "Hi team,\n\nI wanted to follow up on the project update we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\ndavid.wilson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "project update"
+  },
+  {
+    "id": "email_273",
+    "subject": "Feedback on performance review",
+    "sender": "david.wilson",
+    "recipients": [
+      "sarah.chen"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-04T05:15:45",
+    "body": "Team,\n\nGreat work on the performance review this week! The product team is really making excellent progress.\n\nBest,\ndavid.wilson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_274",
+    "subject": "Weekly meeting request report",
+    "sender": "rebecca.moore",
+    "recipients": [
+      "jessica.adams",
+      "alex.kim"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-07T09:08:03",
+    "body": "Hi team,\n\nI wanted to follow up on the meeting request we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\nrebecca.moore",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_275",
+    "subject": "Proposal for standup",
+    "sender": "mike.johnson",
+    "recipients": [
+      "anna.white"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-16T21:07:40",
+    "body": "Hi,\n\nI need your help with the standup issue. Could we schedule a meeting to discuss this further?\n\nThanks,\nmike.johnson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "design",
+    "topic": "standup"
+  },
+  {
+    "id": "email_276",
+    "subject": "Weekly deployment report",
+    "sender": "maya.singh",
+    "recipients": [
+      "kevin.martinez"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-20T05:32:30",
+    "body": "Hello,\n\nI'm sharing the latest update on deployment. Please see the attached document for more details.\n\nBest,\nmaya.singh",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_277",
+    "subject": "Next steps for performance review",
+    "sender": "alex.kim",
+    "recipients": [
+      "raj.sharma",
+      "rebecca.moore"
+    ],
+    "cc": [
+      "tom.garcia",
+      "chris.taylor"
+    ],
+    "timestamp": "2025-08-07T08:10:56",
+    "body": "Hello,\n\nI've completed the performance review task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nalex.kim",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_278",
+    "subject": "Action required: standup",
+    "sender": "priya.patel",
+    "recipients": [
+      "james.clark"
+    ],
+    "cc": [
+      "lisa.brown",
+      "anna.white"
+    ],
+    "timestamp": "2025-08-13T00:32:26",
+    "body": "Hi,\n\nI need your help with the standup issue. Could we schedule a meeting to discuss this further?\n\nThanks,\npriya.patel",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "engineering",
+    "topic": "standup"
+  },
+  {
+    "id": "email_279",
+    "subject": "Meeting: deployment",
+    "sender": "david.wilson",
+    "recipients": [
+      "raj.sharma",
+      "sarah.chen"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-07T00:01:22",
+    "body": "Hi team,\n\nI wanted to follow up on the deployment we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\ndavid.wilson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "deployment"
+  },
+  {
+    "id": "email_280",
+    "subject": "Meeting: bug fix",
+    "sender": "alex.kim",
+    "recipients": [
+      "amanda.scott"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-06T20:41:56",
+    "body": "Hello,\n\nI've completed the bug fix task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nalex.kim",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "legal",
+    "topic": "bug fix"
+  },
+  {
+    "id": "email_281",
+    "subject": "Proposal for feature request",
+    "sender": "priya.patel",
+    "recipients": [
+      "raj.sharma",
+      "rebecca.moore"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-26T08:42:01",
+    "body": "Hi everyone,\n\nI have some questions about the feature request approach. Could someone from the legal team help clarify?\n\nThanks,\npriya.patel",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_282",
+    "subject": "Next steps for interview",
+    "sender": "william.king",
+    "recipients": [
+      "mark.anderson",
+      "anna.white",
+      "john.doe"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-26T14:16:42",
+    "body": "Team,\n\nGreat work on the interview this week! The legal team is really making excellent progress.\n\nBest,\nwilliam.king",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "legal",
+    "topic": "interview"
+  },
+  {
+    "id": "email_283",
+    "subject": "Urgent: demo",
+    "sender": "nicole.thompson",
+    "recipients": [
+      "john.doe"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-14T02:15:23",
+    "body": "Hi everyone,\n\nI have some questions about the demo approach. Could someone from the engineering team help clarify?\n\nThanks,\nnicole.thompson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "demo"
+  },
+  {
+    "id": "email_284",
+    "subject": "Question about design review",
+    "sender": "kevin.martinez",
+    "recipients": [
+      "priya.patel",
+      "tom.garcia"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-23T15:37:07",
+    "body": "Hello everyone,\n\nJust a quick update on the design review project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nkevin.martinez",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "design review"
+  },
+  {
+    "id": "email_285",
+    "subject": "Question about onboarding",
+    "sender": "robert.jackson",
+    "recipients": [
+      "david.wilson"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-21T02:24:40",
+    "body": "Hi everyone,\n\nI have some questions about the onboarding approach. Could someone from the product team help clarify?\n\nThanks,\nrobert.jackson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "product",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_286",
+    "subject": "Follow-up: onboarding",
+    "sender": "tom.garcia",
+    "recipients": [
+      "alex.kim"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-19T23:14:23",
+    "body": "Hi team,\n\nI wanted to follow up on the onboarding we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\ntom.garcia",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_287",
+    "subject": "Discussion: interview",
+    "sender": "tom.garcia",
+    "recipients": [
+      "emma.davis",
+      "mark.anderson",
+      "jessica.adams"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-14T13:47:39",
+    "body": "Hi team,\n\nI wanted to follow up on the interview we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\ntom.garcia",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "interview"
+  },
+  {
+    "id": "email_288",
+    "subject": "Next steps for onboarding",
+    "sender": "tyler.green",
+    "recipients": [
+      "sophia.rodriguez"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-23T15:06:26",
+    "body": "Hi team,\n\nWe need to discuss the onboarding at our next meeting. I'll send out a calendar invite shortly.\n\nThanks,\ntyler.green",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "onboarding"
+  },
+  {
+    "id": "email_289",
+    "subject": "Next steps for training",
+    "sender": "david.wilson",
+    "recipients": [
+      "daniel.lewis"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-28T14:11:11",
+    "body": "Team,\n\nGreat work on the training this week! The marketing team is really making excellent progress.\n\nBest,\ndavid.wilson",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "marketing",
+    "topic": "training"
+  },
+  {
+    "id": "email_290",
+    "subject": "Meeting: interview",
+    "sender": "john.doe",
+    "recipients": [
+      "chris.taylor",
+      "william.king",
+      "priya.patel"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-14T03:54:27",
+    "body": "Hello everyone,\n\nJust a quick update on the interview project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\njohn.doe",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "interview"
+  },
+  {
+    "id": "email_291",
+    "subject": "Next steps for feature request",
+    "sender": "maya.singh",
+    "recipients": [
+      "daniel.lewis",
+      "lisa.brown"
+    ],
+    "cc": [
+      "raj.sharma"
+    ],
+    "timestamp": "2025-06-27T23:09:39",
+    "body": "Hello everyone,\n\nJust a quick update on the feature request project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nmaya.singh",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "feature request"
+  },
+  {
+    "id": "email_292",
+    "subject": "Next steps for meeting request",
+    "sender": "lisa.brown",
+    "recipients": [
+      "nicole.thompson",
+      "sophia.rodriguez"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-17T18:25:17",
+    "body": "Hi everyone,\n\nI have some questions about the meeting request approach. Could someone from the marketing team help clarify?\n\nThanks,\nlisa.brown",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "marketing",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_293",
+    "subject": "Urgent: code review",
+    "sender": "daniel.lewis",
+    "recipients": [
+      "emma.davis",
+      "nicole.thompson",
+      "amanda.scott"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-26T22:24:50",
+    "body": "Hi team,\n\nI wanted to follow up on the code review we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\ndaniel.lewis",
+    "attachments": [
+      "document.pdf"
+    ],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "code review"
+  },
+  {
+    "id": "email_294",
+    "subject": "Discussion: training",
+    "sender": "daniel.lewis",
+    "recipients": [
+      "anna.white",
+      "lisa.brown"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-10T09:16:57",
+    "body": "Hi everyone,\n\nI have some questions about the training approach. Could someone from the hr team help clarify?\n\nThanks,\ndaniel.lewis",
+    "attachments": [],
+    "read": false,
+    "important": true,
+    "team": "hr",
+    "topic": "training"
+  },
+  {
+    "id": "email_295",
+    "subject": "Meeting: meeting request",
+    "sender": "alex.kim",
+    "recipients": [
+      "mike.johnson",
+      "jennifer.lee",
+      "emma.davis"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-16T13:04:44",
+    "body": "Hi everyone,\n\nI have some questions about the meeting request approach. Could someone from the engineering team help clarify?\n\nThanks,\nalex.kim",
+    "attachments": [],
+    "read": true,
+    "important": true,
+    "team": "engineering",
+    "topic": "meeting request"
+  },
+  {
+    "id": "email_296",
+    "subject": "Proposal for performance review",
+    "sender": "emma.davis",
+    "recipients": [
+      "tyler.green",
+      "anna.white"
+    ],
+    "cc": [],
+    "timestamp": "2025-06-19T00:21:49",
+    "body": "Hello everyone,\n\nJust a quick update on the performance review project. We're making good progress and should have an update by tomorrow.\n\nBest regards,\nemma.davis",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "design",
+    "topic": "performance review"
+  },
+  {
+    "id": "email_297",
+    "subject": "Next steps for standup",
+    "sender": "william.king",
+    "recipients": [
+      "tyler.green"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-30T00:03:19",
+    "body": "Hi everyone,\n\nI have some questions about the standup approach. Could someone from the engineering team help clarify?\n\nThanks,\nwilliam.king",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "engineering",
+    "topic": "standup"
+  },
+  {
+    "id": "email_298",
+    "subject": "Question about design review",
+    "sender": "david.wilson",
+    "recipients": [
+      "william.king"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-10T16:05:29",
+    "body": "Hi team,\n\nI wanted to follow up on the design review we discussed earlier. Can you please review and let me know your thoughts?\n\nThanks,\ndavid.wilson",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "devops",
+    "topic": "design review"
+  },
+  {
+    "id": "email_299",
+    "subject": "Weekly training report",
+    "sender": "chris.taylor",
+    "recipients": [
+      "william.king",
+      "robert.jackson"
+    ],
+    "cc": [],
+    "timestamp": "2025-08-02T04:21:49",
+    "body": "Hello,\n\nI've completed the training task. Please review when you have a chance and let me know if any changes are needed.\n\nRegards,\nchris.taylor",
+    "attachments": [],
+    "read": true,
+    "important": false,
+    "team": "legal",
+    "topic": "training"
+  },
+  {
+    "id": "email_300",
+    "subject": "Action required: design review",
+    "sender": "priya.patel",
+    "recipients": [
+      "anna.white",
+      "jennifer.lee",
+      "william.king"
+    ],
+    "cc": [],
+    "timestamp": "2025-07-03T08:33:09",
+    "body": "Team,\n\nGreat work on the design review this week! The product team is really making excellent progress.\n\nBest,\npriya.patel",
+    "attachments": [],
+    "read": false,
+    "important": false,
+    "team": "product",
+    "topic": "design review"
+  }
+]

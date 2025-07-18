@@ -1,0 +1,70 @@
+{
+  "people": [
+    "alex.kim",
+    "amanda.scott",
+    "anna.white",
+    "chris.taylor",
+    "daniel.lewis",
+    "david.wilson",
+    "emma.davis",
+    "james.clark",
+    "jennifer.lee",
+    "jessica.adams",
+    "john.doe",
+    "kevin.martinez",
+    "lisa.brown",
+    "mark.anderson",
+    "maya.singh",
+    "mike.johnson",
+    "nicole.thompson",
+    "priya.patel",
+    "raj.sharma",
+    "rebecca.moore",
+    "robert.jackson",
+    "sarah.chen",
+    "sophia.rodriguez",
+    "tom.garcia",
+    "tyler.green",
+    "william.king"
+  ],
+  "teams": [
+    "design",
+    "devops",
+    "engineering",
+    "hr",
+    "legal",
+    "marketing",
+    "product"
+  ],
+  "topics": [
+    "bug fix",
+    "code review",
+    "demo",
+    "deployment",
+    "design review",
+    "feature request",
+    "interview",
+    "meeting request",
+    "onboarding",
+    "performance review",
+    "project update",
+    "sprint planning",
+    "standup",
+    "training"
+  ],
+  "locations": [
+    "Conference Room A",
+    "Conference Room B",
+    "Meeting Room",
+    "Office",
+    "Zoom"
+  ],
+  "meeting_types": [
+    "demo",
+    "interview",
+    "one-on-one",
+    "review",
+    "sprint planning",
+    "standup"
+  ]
+}
