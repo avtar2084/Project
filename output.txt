@@ -169,3 +169,231 @@ Content: Hello,
 I've completed the interview task. Please review when you have a chance and let me know if a
 
 ================================================================================
+Query: code review meeting in conference a
+Found 4 calendar(s):
+
+--- Result 1 ---
+Title: Daily Standup - Marketing
+Date: 2025-07-27T04:17:35
+Attendees: sophia.rodriguez, william.king, nicole.thompson, raj.sharma, jennifer.lee, priya.patel, james.clark, lisa.brown, sarah.chen
+topic: code review
+Location: Conference Room A
+Description: Strategy discussion for code review implementation.
+
+--- Result 2 ---
+Title: Discussion: code review
+Date: 2025-07-25T17:35:25
+Attendees: john.doe, raj.sharma, emma.davis, william.king, alex.kim, kevin.martinez, tyler.green
+topic: code review
+Location: Conference Room A
+Description: Monthly review of code review progress and team objectives.
+
+--- Result 3 ---
+Title: Daily Standup - Design
+Date: 2025-08-13T05:41:14
+Attendees: maya.singh, tom.garcia, jessica.adams, james.clark, robert.jackson, amanda.scott, john.doe, emma.davis, chris.taylor
+topic: code review
+Location: Conference Room A
+Description: Regular design team sync to cover code review and upcoming priorities.
+
+--- Result 4 ---
+Title: Demo - code review
+Date: 2025-07-03T04:19:50
+Attendees: jennifer.lee, emma.davis, daniel.lewis, priya.patel, james.clark, nicole.thompson, lisa.brown, kevin.martinez, sophia.rodriguez
+topic: code review
+Location: Conference Room A
+Description: Collaborative discussion about code review with the hr team members.
+
+================================================================================
+Query: project update metting since last 4 days
+Found 5 unknown(s):
+
+--- Result 1 ---
+Title: Review Meeting - performance review
+Date: 2025-07-19T01:23:24
+Attendees: anna.white, nicole.thompson, william.king, priya.patel, sarah.chen
+topic: performance review
+Location: Conference Room A
+Description: Weekly sprint planning session focusing on performance review and project updates.
+
+--- Result 2 ---
+Title: Discussion: sprint planning
+Date: 2025-07-16T11:37:24
+Attendees: mike.johnson, kevin.martinez, mark.anderson
+topic: sprint planning
+Location: Office
+Description: Weekly sprint planning session focusing on sprint planning and project updates.
+
+--- Result 3 ---
+Title: Review Meeting - standup
+Date: 2025-07-15T09:30:25
+Attendees: anna.white, sophia.rodriguez, rebecca.moore, jennifer.lee, raj.sharma
+topic: standup
+Location: Conference Room A
+Description: Weekly standup session focusing on standup and project updates.
+
+--- Result 4 ---
+Title: Sprint Planning - Interview
+Date: 2025-07-17T04:26:30
+Attendees: sarah.chen, sophia.rodriguez, emma.davis, alex.kim, tom.garcia, mike.johnson, rebecca.moore, james.clark
+topic: interview
+Location: Conference Room B
+Description: Weekly sprint planning session focusing on interview and project updates.
+
+--- Result 5 ---
+Title: Interview - interview
+Date: 2025-07-16T04:05:52
+Attendees: alex.kim, raj.sharma, anna.white, amanda.scott, daniel.lewis, rebecca.moore, robert.jackson, nicole.thompson
+topic: interview
+Location: Meeting Room
+Description: Weekly sprint planning session focusing on interview and project updates.
+
+================================================================================
+Query: interview call in zoom
+Found 4 calendar(s):
+
+--- Result 1 ---
+Title: Interview - feature request
+Date: 2025-07-16T14:16:52
+Attendees: mike.johnson, jessica.adams, nicole.thompson, kevin.martinez, william.king
+topic: feature request
+Location: Zoom
+Description: Planning and review meeting for feature request initiatives.
+
+--- Result 2 ---
+Title: Demo - interview
+Date: 2025-07-17T04:31:11
+Attendees: nicole.thompson, daniel.lewis, mike.johnson, amanda.scott, rebecca.moore, robert.jackson
+topic: interview
+Location: Zoom
+Description: Regular legal team sync to cover interview and upcoming priorities.
+
+--- Result 3 ---
+Title: Interview - interview
+Date: 2025-07-20T01:18:37
+Attendees: william.king, rebecca.moore, emma.davis, raj.sharma, robert.jackson, jennifer.lee, mike.johnson, david.wilson
+topic: interview
+Location: Zoom
+Description: Working session on interview - please come prepared with updates.
+
+--- Result 4 ---
+Title: Interview - demo
+Date: 2025-07-23T17:21:11
+Attendees: jennifer.lee, sarah.chen, david.wilson, kevin.martinez, tom.garcia, tyler.green, mark.anderson, nicole.thompson, daniel.lewis
+topic: demo
+Location: Zoom
+Description: Monthly review of demo progress and team objectives.
+
+================================================================================
+Query: email from john cc kevin
+Found 1 email(s):
+
+--- Result 1 ---
+From: john.doe
+To: james.clark
+Subject: Urgent: sprint planning
+Date: 2025-08-04T03:07:01
+team: product
+topic: sprint planning
+CC: kevin.martinez, raj.sharma
+Content: Hi everyone,
+
+I have some questions about the sprint planning approach. Could someone from the produ
+
+================================================================================
+Query: email by legal team about onboarding
+Found 4 email(s):
+
+--- Result 1 ---
+From: anna.white
+To: sarah.chen
+Subject: Question about onboarding
+Date: 2025-07-17T08:59:18
+team: legal
+topic: onboarding
+Content: Hello,
+
+I'm sharing the latest update on onboarding. Please see the attached document for more detai
+
+--- Result 2 ---
+From: john.doe
+To: james.clark, nicole.thompson, jessica.adams
+Subject: Next steps for onboarding
+Date: 2025-08-13T12:05:24
+team: legal
+topic: onboarding
+Content: Hi,
+
+I need your help with the onboarding issue. Could we schedule a meeting to discuss this further
+
+--- Result 3 ---
+From: mark.anderson
+To: daniel.lewis, maya.singh, alex.kim
+Subject: Legal team - onboarding
+Date: 2025-08-01T05:53:11
+team: legal
+topic: onboarding
+Content: Hi everyone,
+
+I have some questions about the onboarding approach. Could someone from the legal team
+
+--- Result 4 ---
+From: raj.sharma
+To: lisa.brown
+Subject: Follow-up: onboarding
+Date: 2025-07-04T14:15:01
+team: legal
+topic: onboarding
+Content: Hello everyone,
+
+Just a quick update on the onboarding project. We're making good progress and shoul
+
+================================================================================
+Query: email by legal team about onboarding
+Found 4 email(s):
+
+--- Result 1 ---
+From: anna.white
+To: sarah.chen
+Subject: Question about onboarding
+Date: 2025-07-17T08:59:18
+team: legal
+topic: onboarding
+Content: Hello,
+
+I'm sharing the latest update on onboarding. Please see the attached document for more detai
+
+--- Result 2 ---
+From: john.doe
+To: james.clark, nicole.thompson, jessica.adams
+Subject: Next steps for onboarding
+Date: 2025-08-13T12:05:24
+team: legal
+topic: onboarding
+Content: Hi,
+
+I need your help with the onboarding issue. Could we schedule a meeting to discuss this further
+
+--- Result 3 ---
+From: mark.anderson
+To: daniel.lewis, maya.singh, alex.kim
+Subject: Legal team - onboarding
+Date: 2025-08-01T05:53:11
+team: legal
+topic: onboarding
+Content: Hi everyone,
+
+I have some questions about the onboarding approach. Could someone from the legal team
+
+--- Result 4 ---
+From: raj.sharma
+To: lisa.brown
+Subject: Follow-up: onboarding
+Date: 2025-07-04T14:15:01
+team: legal
+topic: onboarding
+Content: Hello everyone,
+
+Just a quick update on the onboarding project. We're making good progress and shoul
+
+================================================================================

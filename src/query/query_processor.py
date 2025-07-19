@@ -37,16 +37,14 @@ def process_query(user_query: str):
     entities = entity_extractor.extract_entities(user_query)
     print(f"[DEBUG] Extracted entities: {entities}")
 
-    date_info = dp.parse(user_query)
-    print(f"[DEBUG] Raw date_info from parser: {repr(date_info)}")
-    # print(f"[DEBUG] Type of date_info: {type(date_info)}")
+    date_info = dp.extract_all_dates(user_query)
+    print(f"[DEBUG] Parsed date info: {date_info}")
+
 
     if isinstance(date_info, str) and re.search(r'\b(from|since)\s+\w+\s+\d{4}\s+(to|until)\s+\w+\s+\d{4}\b', query_lower):
         all_dates = dp.extract_all_dates(user_query)
         if len(all_dates) >= 2:
             date_info = all_dates
-    # print(f"[DEBUG] Raw date_info from parser: {repr(date_info)}")
-    # print(f"[DEBUG] Type of date_info: {type(date_info)}")
     
     def match_fn(term: str) -> set[int]:
         if term == "__ALL__":
@@ -54,7 +52,6 @@ def process_query(user_query: str):
 
         if term.startswith("from:"):
             person = term.split(":", 1)[1].lower()
-            print(f"[DEBUG] Searching for person '{person}' in senders")
             return {i for i, item in enumerate(source_data)
                     if person in item.get("sender", "").lower()}
 
@@ -129,7 +126,7 @@ def process_query(user_query: str):
                 matching_indices &= match_fn(f"to:{person}")
             elif filter_type == 'cc':
                 matching_indices &= match_fn(f"cc:{person}")
-        print(f"[DEBUG] Final matching indices after intersection: {matching_indices}")
+        # print(f"[DEBUG] Final matching indices after intersection: {matching_indices}")
         filtered_data = [source_data[i] for i in matching_indices]
     else:
         for entity_set in entities.values():
@@ -139,8 +136,6 @@ def process_query(user_query: str):
             stop_words = {"the", "a", "an", "and", "or", "but", "in", "on", "at", "to", "for", "of", "with", "by", "from", "show", "me", "find", "get", "any", "all", "have", "do", "i", "my", "are", "is", "was", "were", "been", "be", "will", "would", "could", "should"}
             query_words = [w.strip(".,!?") for w in query_lower.split() if w.strip(".,!?") not in stop_words and len(w.strip(".,!?")) > 2]
             search_terms.extend(query_words)
-
-        print(f"[DEBUG] Final search_terms before matching: {search_terms}")
 
         # OR Logic
         # if search_terms:
@@ -177,20 +172,9 @@ def process_query(user_query: str):
         else:
             filtered_data = source_data
 
-        # print(f"[DEBUG] Raw query: '{user_query}'")
-        # print(f"[DEBUG] Query lower: '{query_lower}'")
-        # print(f"[DEBUG] Contextual filters: {contextual_filters}")
-        # print(f"[DEBUG] Entities extracted: {entities}")
-
-    # for filter_type, person in contextual_filters.items():
-    #     print(f"[DEBUG] Applying {filter_type}:{person}")
-    #     filter_results = match_fn(f"{filter_type}:{person}")
-    #     print(f"[DEBUG] Found {len(filter_results)} items")
-    #     matching_indices &= filter_results
-
 
     if isinstance(date_info, tuple) and len(date_info) == 2:
-        print(f"[DEBUG] Applying date range filter: {date_info}")
+        # print(f"[DEBUG] Applying date range filter: {date_info}")
         start_date, end_date = date_info
         filtered_data = [
             item for item in filtered_data
@@ -207,19 +191,33 @@ def process_query(user_query: str):
                start_date <= item["timestamp"][:10] <= end_date
         ]
     elif isinstance(date_info, str) and date_info:
-        print(f"[DEBUG] Applying single date filter: {date_info}")
+        # print(f"[DEBUG] Applying single date filter: {date_info}")
         filtered_data = [
             item for item in filtered_data
             if item.get("timestamp") and len(item["timestamp"]) >= 10 and
                item["timestamp"][:10] == date_info
         ]
     elif isinstance(date_info, list) and len(date_info) == 1:
-        print(f"[DEBUG] Applying single date from list filter: {date_info}")
-        filtered_data = [
-            item for item in filtered_data
-            if item.get("timestamp") and len(item["timestamp"]) >= 10 and
-               item["timestamp"][:10] == date_info[0]
-        ]
+        single_date = date_info[0]
+        
+        # Check if this is a relative date query (last X days/weeks/months)
+        if any(word in query_lower for word in ["last", "past", "previous"]) and any(word in query_lower for word in ["days", "weeks", "months"]):
+            from datetime import datetime
+            end_date = datetime.now().strftime('%Y-%m-%d')
+            print(f"[DEBUG] Converting single date to range: {single_date} to {end_date}")
+            filtered_data = [
+                item for item in filtered_data
+                if item.get("timestamp") and len(item["timestamp"]) >= 10 and
+                   single_date <= item["timestamp"][:10] <= end_date
+            ]
+        else:
+            # Regular single date match (exact date)
+            print(f"[DEBUG] Applying exact single date filter: {single_date}")
+            filtered_data = [
+                item for item in filtered_data
+                if item.get("timestamp") and len(item["timestamp"]) >= 10 and
+                   item["timestamp"][:10] == single_date
+            ]
     return filtered_data
 
 
@@ -232,7 +230,7 @@ def display_results(results, intent,query=None, output_file=None):
         return
     output_buffer = StringIO() 
 
-    print(f"🔍 Query Intent: {intent}")
+    print(f"\033[1;36m🔍 Query: {query}\033[0m")
     print(f"\n📋 Found {len(results)} matching {intent}(s):\n")
 
     output_buffer.write(f"Query: {query}\n")
@@ -247,6 +245,7 @@ def display_results(results, intent,query=None, output_file=None):
             print(f"Subject: {item.get('subject', 'No subject')}")
             print(f"Date: {item.get('timestamp', 'Unknown')}")
             print(f"team: {item.get('team', 'Unknown')}")
+            print(f"topic: {item.get('topic', 'Unknown')}")
             if item.get('cc'):
                 print(f"CC: {', '.join(item.get('cc', []))}")
             content = item.get('body', 'No content')
@@ -283,6 +282,7 @@ def display_results(results, intent,query=None, output_file=None):
     if output_file:
         with open(output_file, "a", encoding="utf-8") as f:
             f.write(output_buffer.getvalue())
+            pass
 
 if __name__ == "__main__":
     print("📬 Natural Language Query System (type empty input to exit)\n")
