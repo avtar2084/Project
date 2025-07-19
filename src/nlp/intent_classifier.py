@@ -26,7 +26,7 @@ class IntentClassifier:
         else:
             return "unknown"
 
-# Example usage:
+# # Example usage:
 # classifier = IntentClassifier()
 # print(classifier.classify_intent("code review meeting on 14 July 2025"))
-# print(classify_intent("Do I have any meetings tomorrow with HR?"))  
+# print(classifier.classify_intent("email from sarah to james"))  

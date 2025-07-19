@@ -45,16 +45,79 @@ class DateParser:
             date_str = f"{month_name} 1, {year}"
         
         return dateparser.parse(date_str, settings=self.settings)
-
+    
+    def _contains_date_keywords(self, text: str) -> bool:
+        """
+        Check if the text contains actual date-related keywords.
+        This helps avoid false positives like "to" being parsed as a date.
+        """
+        text = text.lower()
+    
+    # Common date patterns and keywords
+        date_patterns = [
+            r'\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b',  # MM/DD/YYYY, DD/MM/YYYY
+            r'\b\d{4}[/-]\d{1,2}[/-]\d{1,2}\b',    # YYYY/MM/DD
+            r'\b\d{1,2}\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)',  # DD Month
+            r'\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\s+\d{1,2}',  # Month DD
+            r'\b(january|february|march|april|may|june|july|august|september|october|november|december)\b',
+            r'\b(today|tomorrow|yesterday)\b',
+            r'\b(this|last|next)\s+(week|month|year|monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b',
+            r'\b(before|after|since|from|until|between)\s+\d',
+            r'\b(before|after|since|from|until|between)\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)',
+            r'\b(before|after|since|from|until|between)\s+(january|february|march|april|may|june|july|august|september|october|november|december)',
+            r'\bin\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)',
+            r'\bin\s+(january|february|march|april|may|june|july|august|september|october|november|december)',
+            r'\bin\s+\d{4}\b',  # in 2025
+        ]
+    
+        for pattern in date_patterns:
+            if re.search(pattern, text):
+                return True
+    
+        return False
+    
     def parse_single_date(self, text: str) -> Optional[str]:
         """
         Parse a single date expression and return it as ISO string.
         """
         text = text.strip().rstrip(".,!?")
+        # print(f"[DEBUG] parse_single_date called with: {repr(text)}")
+    
+    # Check if the text actually contains date-related content
+        if not self._contains_date_keywords(text):
+            # print(f"[DEBUG] No date keywords found in: {repr(text)}")
+            return None
+    
         results = search_dates(text, settings=self.settings)
+        # print(f"[DEBUG] search_dates returned: {results}")
+    
         if results:
-            return results[0][1].date().isoformat()
+        # Filter out results that are just common words misinterpreted as dates
+            filtered_results = []
+            for date_str, dt in results:
+                date_str_lower = date_str.lower()
+                # Skip common words that might be misinterpreted as dates
+                if date_str_lower in ['to', 'from', 'at', 'in', 'on', 'by', 'for', 'with', 'and', 'or']:
+                    continue
+                filtered_results.append((date_str, dt))
+        
+            if filtered_results:
+                # print(f"[DEBUG] First filtered result: {filtered_results[0]}")
+                return filtered_results[0][1].date().isoformat()
+    
         return None
+    # def parse_single_date(self, text: str) -> Optional[str]:
+    #     """
+    #     Parse a single date expression and return it as ISO string.
+    #     """
+    #     text = text.strip().rstrip(".,!?")
+    #     print(f"[DEBUG] parse_single_date called with: {repr(text)}")
+    #     results = search_dates(text, settings=self.settings)
+    #     print(f"[DEBUG] search_dates returned: {results}")
+    #     if results:
+    #         print(f"[DEBUG] First result: {results[0]}")
+    #         return results[0][1].date().isoformat()
+    #     return None
 
     def parse_date_range(self, text: str) -> Optional[Tuple[Optional[str], Optional[str]]]:
         """
@@ -92,21 +155,43 @@ class DateParser:
                 last_day = next_month - timedelta(days=1)
                 return (start_date.date().isoformat(), last_day.date().isoformat())
 
-        # Open-ended "since" / "after"
-        open_start = re.search(r'(since|after)\s+([a-zA-Z]+\s+\d{4}|\d{1,2}[/-]\d{1,2}[/-]\d{4}|[a-zA-Z]+)', text)
-        if open_start:
-            start_str = open_start.group(2).strip()
-            start = self._parse_date_with_month_first(start_str)
-            if start:
-                return (start.date().isoformat(), None)
+        # Open-ended "since" / "after"  
+        since_match = re.search(r'(since|after)\s+', text)
+        if since_match:
+            remaining_text = text[since_match.end():]
+            print(f"[DEBUG] Remaining text after since/after: '{remaining_text}'")
+            results = dateparser.parse(remaining_text, settings=self.settings)
+            # results = search_dates(remaining_text, settings=self.settings)
+            print(f"[DEBUG] search_dates results: {results}")
+            if results:
+                print(f"[DEBUG] Parsed date: {results[0][1].date().isoformat()}")
+                return (results[0][1].date().isoformat(), None)
 
         # Open-ended "before"
-        open_end = re.search(r'before\s+([a-zA-Z]+\s+\d{4}|\d{1,2}[/-]\d{1,2}[/-]\d{4}|[a-zA-Z]+)', text)
-        if open_end:
-            end_str = open_end.group(1).strip()
-            end = self._parse_date_with_month_first(end_str)
-            if end:
-                return (None, end.date().isoformat())
+        before_match = re.search(r'before\s+', text)  
+        if before_match:
+            remaining_text = text[before_match.end():]
+            results = search_dates(remaining_text, settings=self.settings)
+            if results:
+                return (None, results[0][1].date().isoformat())
+
+
+        # # Open-ended "since" / "after"
+        # open_start = re.search(r'(since|after)\s+([a-zA-Z]+\s+\d{4}|\d{1,2}[/-]\d{1,2}[/-]\d{4}|[a-zA-Z]+)', text)
+        # if open_start:
+        #     print(f"[DEBUG] Found open_start match: '{open_start.group(2)}'")
+        #     start_str = open_start.group(2).strip()
+        #     start = self._parse_date_with_month_first(start_str)
+        #     if start:
+        #         return (start.date().isoformat(), None)
+
+        # # Open-ended "before"
+        # open_end = re.search(r'before\s+([a-zA-Z]+\s+\d{4}|\d{1,2}[/-]\d{1,2}[/-]\d{4}|[a-zA-Z]+)', text)
+        # if open_end:
+        #     end_str = open_end.group(1).strip()
+        #     end = self._parse_date_with_month_first(end_str)
+        #     if end:
+        #         return (None, end.date().isoformat())
 
         return None
 
@@ -145,16 +230,17 @@ class DateParser:
         range_result = self.parse_date_range(text)
         if range_result:
             return range_result
+        # print(f"[DEBUG] in DateParser.parse() called with: {repr(text)}")
         return self.parse_single_date(text.strip().rstrip(".,!?"))
 
 
-# Example usage
+# # # Example usage
 if __name__ == "__main__":
     dp = DateParser()
-    print(dp.extract_all_dates("emails from sophia from jan 2025 to july 2025"))
-    print(dp.parse("emails from sophia in jan 2025"))
-    print(dp.parse("emails before April 2025"))
-    print(dp.extract_all_dates("find meetings from last week and interviews next Monday"))
+    # print(dp.extract_all_dates("code review metting since 3 days"))
+    print(dp.parse("emails from sarah to anna after next monday"))
+    # print(dp.parse("emails before April 2025"))
+    # print(dp.extract_all_dates("find meetings from last week and interviews next Monday"))
 
 
 # import warnings

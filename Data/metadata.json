@@ -27,7 +27,7 @@
     "tyler.green",
     "william.king"
   ],
-  "teams": [
+  "team": [
     "design",
     "devops",
     "engineering",
@@ -36,7 +36,7 @@
     "marketing",
     "product"
   ],
-  "topics": [
+  "topic": [
     "bug fix",
     "code review",
     "demo",

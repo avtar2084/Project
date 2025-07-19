@@ -36,8 +36,8 @@ class MeetingEntityExtractor:
         """Preprocess metadata to handle variations and create lookup dictionaries"""
         processed = {
             'people': {},
-            'teams': {},
-            'topics': {},
+            'team': {},
+            'topic': {},
             'meeting_types': {},
             'locations': {}
         }
@@ -58,7 +58,7 @@ class MeetingEntityExtractor:
         
         # Process teams, topics, and meeting types
         # Use full names for matching, no partial keywords
-        for category in ['teams', 'topics', 'meeting_types']:
+        for category in ['team', 'topic', 'meeting_types']:
             for item in self.metadata[category]:
             # Only include full item as match key (no partial keywords like 'review')
                 processed[category][item.lower()] = item
@@ -102,8 +102,8 @@ class MeetingEntityExtractor:
         # Initialize result sets
         result = {
             'people': set(),
-            'teams': set(),
-            'topics': set(),
+            'team': set(),
+            'topic': set(),
             'meeting_types': set(),
             'locations': set()
         }
@@ -128,15 +128,15 @@ class MeetingEntityExtractor:
         
         # Extract other entities using keyword matching
         # Match teams
-        for key, value in self.processed_metadata['teams'].items():
+        for key, value in self.processed_metadata['team'].items():
             if key in text_lower:
-                result['teams'].add(value)
+                result['team'].add(value)
         
         # Match topics (be more specific to avoid false positives)
-        for key, value in self.processed_metadata['topics'].items():
+        for key, value in self.processed_metadata['topic'].items():
             # Use word boundaries for better matching
             if re.search(r'\b' + re.escape(key) + r'\b', text_lower):
-                result['topics'].add(value)
+                result['topic'].add(value)
         
         # Match meeting types
         for key, value in self.processed_metadata['meeting_types'].items():
@@ -168,7 +168,8 @@ if __name__ == "__main__":
         "code review meeting on 14 July 2025",
         "email by hr team about training",
         "Schedule an interview with Sarah Chen in Meeting Room",
-        "emails from  james to sarah",
+        "emails from  sarah to anna",
+        "emails from  sarah to james",
         # "Performance review with Maya Singh in Office"
     ]
     

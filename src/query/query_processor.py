@@ -15,7 +15,7 @@ with open("Data/calendar_events.json", "r", encoding="utf-8") as f:
 
 # Initialize extractors
 entity_extractor = MeetingEntityExtractor()
-date_parser = DateParser()
+dp = DateParser()
 boolean_parser = BooleanParser()
 classifier = IntentClassifier()
 intent_label = ""
@@ -31,20 +31,29 @@ def process_query(user_query: str):
 
     source_data = EMAILS if intent == "email" else CALENDAR_EVENTS
 
+    # print(f"[DEBUG] DateParser reference time: {dp.reference}")
+    # print(f"[DEBUG] DateParser settings: {dp.settings}")
     entities = entity_extractor.extract_entities(user_query)
-    date_info = date_parser.parse(user_query)
+    print(f"[DEBUG] Extracted entities: {entities}")
+
+    date_info = dp.parse(user_query)
+    print(f"[DEBUG] Raw date_info from parser: {repr(date_info)}")
+    # print(f"[DEBUG] Type of date_info: {type(date_info)}")
 
     if isinstance(date_info, str) and re.search(r'\b(from|since)\s+\w+\s+\d{4}\s+(to|until)\s+\w+\s+\d{4}\b', query_lower):
-        all_dates = date_parser.extract_all_dates(user_query)
+        all_dates = dp.extract_all_dates(user_query)
         if len(all_dates) >= 2:
             date_info = all_dates
-
+    # print(f"[DEBUG] Raw date_info from parser: {repr(date_info)}")
+    # print(f"[DEBUG] Type of date_info: {type(date_info)}")
+    
     def match_fn(term: str) -> set[int]:
         if term == "__ALL__":
             return set(range(len(source_data)))
 
         if term.startswith("from:"):
             person = term.split(":", 1)[1].lower()
+            print(f"[DEBUG] Searching for person '{person}' in senders")
             return {i for i, item in enumerate(source_data)
                     if person in item.get("sender", "").lower()}
 
@@ -70,21 +79,27 @@ def process_query(user_query: str):
                     term_lower in item.get("team", "").lower() or
                     term_lower in item.get("body", "").lower()):
                     matches.add(i)
+                    
             else:
                 if (any(term_lower in a.lower() for a in item.get("attendees", [])) or
                     term_lower in item.get("title", "").lower() or
                     term_lower in item.get("description", "").lower() or
                     term_lower in item.get("topic", "").lower() or
-                    term_lower in item.get("meeting_type", "").lower() or
+                    # term_lower in item.get("meeting_type", "").lower() or
                     term_lower in item.get("team", "").lower() or
                     term_lower in item.get("location", "").lower()):
                     matches.add(i)
+        
+        
         return matches
     
+    # print(f"[DEBUG] Matches for 'devops': {match_fn('devops')}")
+    # print(f"[DEBUG] Matches for 'Zoom': {match_fn('Zoom')}")
     
     
-    intent_label = intent if intent in {"email", "calendar"} else "result"
-    print(f"intent: {intent_label}")
+    
+    # intent_label = intent if intent in {"email", "calendar"} else "result"
+    # print(f"intent: {intent_label}")
     
 
     search_terms = []
@@ -121,6 +136,7 @@ def process_query(user_query: str):
                 matching_indices &= match_fn(f"to:{person}")
             elif filter_type == 'cc':
                 matching_indices &= match_fn(f"cc:{person}")
+        print(f"[DEBUG] Final matching indices after intersection: {matching_indices}")
         filtered_data = [source_data[i] for i in matching_indices]
     else:
         for entity_set in entities.values():
@@ -131,10 +147,18 @@ def process_query(user_query: str):
             query_words = [w.strip(".,!?") for w in query_lower.split() if w.strip(".,!?") not in stop_words and len(w.strip(".,!?")) > 2]
             search_terms.extend(query_words)
 
+        print(f"[DEBUG] Final search_terms before matching: {search_terms}")
+
+        # OR Logic
+        # if search_terms:
+        #     matching_indices = set()
+        #     for term in search_terms:
+        #         matching_indices.update(match_fn(term))
+
         if search_terms:
-            matching_indices = set()
+            matching_indices = set(range(len(source_data)))
             for term in search_terms:
-                matching_indices.update(match_fn(term))
+                matching_indices &= match_fn(term)
 
             if any(op in query_lower for op in ["and", "or", "not"]):
                 try:
@@ -147,6 +171,11 @@ def process_query(user_query: str):
         else:
             filtered_data = source_data
 
+        # print(f"[DEBUG] Raw query: '{user_query}'")
+        # print(f"[DEBUG] Query lower: '{query_lower}'")
+        # print(f"[DEBUG] Contextual filters: {contextual_filters}")
+        # print(f"[DEBUG] Entities extracted: {entities}")
+
     # for filter_type, person in contextual_filters.items():
     #     print(f"[DEBUG] Applying {filter_type}:{person}")
     #     filter_results = match_fn(f"{filter_type}:{person}")
@@ -155,6 +184,7 @@ def process_query(user_query: str):
 
 
     if isinstance(date_info, tuple) and len(date_info) == 2:
+        print(f"[DEBUG] Applying date range filter: {date_info}")
         start_date, end_date = date_info
         filtered_data = [
             item for item in filtered_data
@@ -163,6 +193,7 @@ def process_query(user_query: str):
                (end_date is None or item["timestamp"][:10] <= end_date)
         ]
     elif isinstance(date_info, list) and len(date_info) >= 2:
+        print(f"[DEBUG] Applying date list filter: {date_info}")
         start_date, end_date = date_info[0], date_info[-1]
         filtered_data = [
             item for item in filtered_data
@@ -170,18 +201,24 @@ def process_query(user_query: str):
                start_date <= item["timestamp"][:10] <= end_date
         ]
     elif isinstance(date_info, str) and date_info:
+        print(f"[DEBUG] Applying single date filter: {date_info}")
         filtered_data = [
             item for item in filtered_data
             if item.get("timestamp") and len(item["timestamp"]) >= 10 and
                item["timestamp"][:10] == date_info
         ]
     elif isinstance(date_info, list) and len(date_info) == 1:
+        print(f"[DEBUG] Applying single date from list filter: {date_info}")
         filtered_data = [
             item for item in filtered_data
             if item.get("timestamp") and len(item["timestamp"]) >= 10 and
                item["timestamp"][:10] == date_info[0]
         ]
 
+    # print(f"[DEBUG] Final filtered_data length: {len(filtered_data)}")
+    # print(f"[DEBUG] Date info: {date_info}")
+    if filtered_data:
+        print(f"[DEBUG] First item timestamp: {filtered_data[0].get('timestamp', 'No timestamp')}")
     return filtered_data
 
 
