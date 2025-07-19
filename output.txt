@@ -1,0 +1,171 @@
+Query: email from sarah to james
+Found 1 email(s):
+
+--- Result 1 ---
+From: sarah.chen
+To: priya.patel, james.clark
+Subject: Action required: deployment
+Date: 2025-06-20T13:05:31
+team: legal
+topic: deployment
+Content: Hello,
+
+I'm sharing the latest update on deployment. Please see the attached document for more detai
+
+================================================================================
+Query: email from sarah
+Found 9 email(s):
+
+--- Result 1 ---
+From: sarah.chen
+To: lisa.brown, william.king, tyler.green
+Subject: Urgent: sprint planning
+Date: 2025-08-05T15:55:33
+team: product
+topic: sprint planning
+Content: Hi,
+
+I need your help with the sprint planning issue. Could we schedule a meeting to discuss this fu
+
+--- Result 2 ---
+From: sarah.chen
+To: jennifer.lee, william.king, raj.sharma
+Subject: RE: Standup
+Date: 2025-08-16T13:55:39
+team: marketing
+topic: standup
+Content: Hello everyone,
+
+Just a quick update on the standup project. We're making good progress and should h
+
+--- Result 3 ---
+From: sarah.chen
+To: chris.taylor, emma.davis
+Subject: Weekly demo report
+Date: 2025-07-09T20:31:29
+team: product
+topic: demo
+Content: Hi,
+
+I need your help with the demo issue. Could we schedule a meeting to discuss this further?
+
+Tha
+
+--- Result 4 ---
+From: sarah.chen
+To: jennifer.lee
+Subject: Update on sprint planning
+Date: 2025-07-19T17:30:51
+team: devops
+topic: sprint planning
+Content: Hi everyone,
+
+I have some questions about the sprint planning approach. Could someone from the devop
+
+--- Result 5 ---
+From: sarah.chen
+To: tom.garcia, david.wilson
+Subject: Next steps for bug fix
+Date: 2025-06-24T09:52:39
+team: marketing
+topic: bug fix
+Content: Hello,
+
+I'm sharing the latest update on bug fix. Please see the attached document for more details.
+
+--- Result 6 ---
+From: sarah.chen
+To: anna.white
+Subject: Feedback on training
+Date: 2025-08-11T15:58:32
+team: design
+topic: training
+CC: nicole.thompson, chris.taylor
+Content: Hi everyone,
+
+I have some questions about the training approach. Could someone from the design team 
+
+--- Result 7 ---
+From: sarah.chen
+To: priya.patel, james.clark
+Subject: Action required: deployment
+Date: 2025-06-20T13:05:31
+team: legal
+topic: deployment
+Content: Hello,
+
+I'm sharing the latest update on deployment. Please see the attached document for more detai
+
+--- Result 8 ---
+From: sarah.chen
+To: jennifer.lee, jessica.adams
+Subject: Feedback on performance review
+Date: 2025-07-06T19:01:51
+team: marketing
+topic: performance review
+Content: Team,
+
+Great work on the performance review this week! The marketing team is really making excellent
+
+--- Result 9 ---
+From: sarah.chen
+To: anna.white, lisa.brown, nicole.thompson
+Subject: Proposal for demo
+Date: 2025-07-08T10:21:22
+team: marketing
+topic: demo
+Content: Hi,
+
+I need your help with the demo issue. Could we schedule a meeting to discuss this further?
+
+Tha
+
+================================================================================
+Query: email by hr team about interview
+Found 4 email(s):
+
+--- Result 1 ---
+From: sophia.rodriguez
+To: jennifer.lee, kevin.martinez
+Subject: Weekly interview report
+Date: 2025-07-11T20:34:12
+team: hr
+topic: interview
+Content: Hi team,
+
+I wanted to follow up on the interview we discussed earlier. Can you please review and let
+
+--- Result 2 ---
+From: rebecca.moore
+To: sarah.chen
+Subject: Feedback on interview
+Date: 2025-07-12T20:04:01
+team: hr
+topic: interview
+Content: Hi,
+
+I need your help with the interview issue. Could we schedule a meeting to discuss this further?
+
+--- Result 3 ---
+From: maya.singh
+To: amanda.scott
+Subject: Feedback on interview
+Date: 2025-07-23T03:22:38
+team: hr
+topic: interview
+Content: Hi,
+
+I need your help with the interview issue. Could we schedule a meeting to discuss this further?
+
+--- Result 4 ---
+From: tom.garcia
+To: david.wilson
+Subject: Urgent: interview
+Date: 2025-07-14T07:05:12
+team: hr
+topic: interview
+Content: Hello,
+
+I've completed the interview task. Please review when you have a chance and let me know if a
+
+================================================================================

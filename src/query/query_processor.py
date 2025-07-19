@@ -5,6 +5,7 @@ from src.nlp.entity_extractor import MeetingEntityExtractor
 from src.nlp.intent_classifier import IntentClassifier
 from src.nlp.date_parser import DateParser
 from src.nlp.boolean_parser import BooleanParser
+from io import StringIO
 
 # Load source data
 with open("Data/emails.json", "r", encoding="utf-8") as f:
@@ -92,15 +93,6 @@ def process_query(user_query: str):
         
         
         return matches
-    
-    # print(f"[DEBUG] Matches for 'devops': {match_fn('devops')}")
-    # print(f"[DEBUG] Matches for 'Zoom': {match_fn('Zoom')}")
-    
-    
-    
-    # intent_label = intent if intent in {"email", "calendar"} else "result"
-    # print(f"intent: {intent_label}")
-    
 
     search_terms = []
     contextual_filters = {}
@@ -109,8 +101,9 @@ def process_query(user_query: str):
     from_match = re.search(r'\bfrom\s+([a-zA-Z.]+)(?:\s+(?:to|until|since)\s+\w+\s+\d{4})?', query_lower)
     if from_match and not has_date_range_pattern:
         person = from_match.group(1)
-        matched_person = next((p for p in entities.get('people', []) if person.lower() in p.lower()), person)
-        contextual_filters['from'] = matched_person
+        if person.lower() not in ['hr', 'design', 'engineering', 'devops', 'legal', 'marketing', 'product', 'last', 'next', 'this']:
+            matched_person = next((p for p in entities.get('people', []) if person.lower() in p.lower()), person)
+            contextual_filters['from'] = matched_person
     elif from_match and has_date_range_pattern:
         person_match = re.search(r'\bfrom\s+([a-zA-Z.]+)(?=\s+(?:from|since))', query_lower)
         if person_match:
@@ -155,7 +148,20 @@ def process_query(user_query: str):
         #     for term in search_terms:
         #         matching_indices.update(match_fn(term))
 
-        if search_terms:
+        has_team = bool(entities.get('team'))
+        has_topic = bool(entities.get('topic'))
+
+        if search_terms and has_team and has_topic:
+            team_matches = {i for i, item in enumerate(source_data) 
+                   if any(team.lower() == item.get("team", "").lower() 
+                         for team in entities.get('team', []))}
+            topic_matches = set()
+            for term in entities.get('topic', []):
+                topic_matches.update(match_fn(term))
+            matching_indices = team_matches & topic_matches
+            filtered_data = [source_data[i] for i in matching_indices]
+        
+        elif search_terms:
             matching_indices = set(range(len(source_data)))
             for term in search_terms:
                 matching_indices &= match_fn(term)
@@ -214,44 +220,73 @@ def process_query(user_query: str):
             if item.get("timestamp") and len(item["timestamp"]) >= 10 and
                item["timestamp"][:10] == date_info[0]
         ]
-
-    # print(f"[DEBUG] Final filtered_data length: {len(filtered_data)}")
-    # print(f"[DEBUG] Date info: {date_info}")
-    if filtered_data:
-        print(f"[DEBUG] First item timestamp: {filtered_data[0].get('timestamp', 'No timestamp')}")
     return filtered_data
 
 
-def display_results(results, intent):
+def display_results(results, intent,query=None, output_file=None):
     if not results:
         print("[INFO] No matching results found.")
+        if output_file:
+            with open(output_file, "a", encoding="utf-8") as f:
+                f.write(f"Query: {query}\n[INFO] No matching results found.\n{'='*80}\n")
         return
+    output_buffer = StringIO() 
 
     print(f"🔍 Query Intent: {intent}")
     print(f"\n📋 Found {len(results)} matching {intent}(s):\n")
+
+    output_buffer.write(f"Query: {query}\n")
+    output_buffer.write(f"Found {len(results)} {intent}(s):\n\n")
+
     for i, item in enumerate(results, 1):
         print(f"--- Result {i} ---")
+        output_buffer.write(f"--- Result {i} ---\n")
         if intent == "email":
             print(f"From: {item.get('sender', 'Unknown')}")
             print(f"To: {', '.join(item.get('recipients', []))}")
             print(f"Subject: {item.get('subject', 'No subject')}")
             print(f"Date: {item.get('timestamp', 'Unknown')}")
+            print(f"team: {item.get('team', 'Unknown')}")
             if item.get('cc'):
                 print(f"CC: {', '.join(item.get('cc', []))}")
             content = item.get('body', 'No content')
             print(f"Content: {content[:100]}{'...' if len(content) > 100 else ''}")
+            output_buffer.write(f"From: {item.get('sender', 'Unknown')}\n")
+            output_buffer.write(f"To: {', '.join(item.get('recipients', []))}\n")
+            output_buffer.write(f"Subject: {item.get('subject', 'No subject')}\n")
+            output_buffer.write(f"Date: {item.get('timestamp', 'Unknown')}\n")
+            output_buffer.write(f"team: {item.get('team', 'Unknown')}\n")
+            output_buffer.write(f"topic: {item.get('topic', 'Unknown')}\n")
+            if item.get('cc'):
+                output_buffer.write(f"CC: {', '.join(item.get('cc', []))}\n")
+            output_buffer.write(f"Content: {content[:100]}\n")
         else:
             print(f"Title: {item.get('title', 'No title')}")
             print(f"Date: {item.get('timestamp', 'Unknown')}")
             print(f"Attendees: {', '.join(item.get('attendees', []))}")
+            print(f"topic: {item.get('topic', 'No location')}")
             print(f"Location: {item.get('location', 'No location')}")
             description = item.get('description', 'No description')
             print(f"Description: {description[:100]}{'...' if len(description) > 100 else ''}")
+            
+            output_buffer.write(f"Title: {item.get('title', 'No title')}\n")
+            output_buffer.write(f"Date: {item.get('timestamp', 'Unknown')}\n")
+            output_buffer.write(f"Attendees: {', '.join(item.get('attendees', []))}\n")
+            output_buffer.write(f"topic: {item.get('topic', 'No topic')}\n")
+            output_buffer.write(f"Location: {item.get('location', 'No location')}\n")
+            output_buffer.write(f"Description: {description[:100]}\n")
+        
         print()
-
+        output_buffer.write("\n")  # newline in file
+  # Line break
+    output_buffer.write("=" * 80 + "\n")
+    if output_file:
+        with open(output_file, "a", encoding="utf-8") as f:
+            f.write(output_buffer.getvalue())
 
 if __name__ == "__main__":
     print("📬 Natural Language Query System (type empty input to exit)\n")
+    OUTPUT_LOG = "output.txt"
     while True:
         query = input("Ask: ")
         if not query.strip():
@@ -259,7 +294,7 @@ if __name__ == "__main__":
         try:
             results = process_query(query)
             intent = classifier.classify_intent(query)
-            display_results(results, intent)
+            display_results(results, intent,query=query, output_file=OUTPUT_LOG)
         except Exception as e:
             print(f"[ERROR] An error occurred: {e}")
             import traceback

@@ -19,7 +19,7 @@ class DateParser:
         self.reference = reference or datetime.now()
         self.settings = {
             "RELATIVE_BASE": self.reference,
-            "PREFER_DAY_OF_MONTH": "first"
+            "PREFER_DAY_OF_MONTH": "first",
         }
 
     def _parse_date_with_month_first(self, date_str: str) -> Optional[datetime]:
@@ -156,16 +156,36 @@ class DateParser:
                 return (start_date.date().isoformat(), last_day.date().isoformat())
 
         # Open-ended "since" / "after"  
-        since_match = re.search(r'(since|after)\s+', text)
+        since_match = re.search(r'(since|after|till)\s+', text)
         if since_match:
             remaining_text = text[since_match.end():]
-            print(f"[DEBUG] Remaining text after since/after: '{remaining_text}'")
-            results = dateparser.parse(remaining_text, settings=self.settings)
             # results = search_dates(remaining_text, settings=self.settings)
-            print(f"[DEBUG] search_dates results: {results}")
-            if results:
-                print(f"[DEBUG] Parsed date: {results[0][1].date().isoformat()}")
-                return (results[0][1].date().isoformat(), None)
+            keyword = since_match.group(1)
+            if keyword == "since":
+            # "since" implies past dates
+                relative_settings = {
+                    "RELATIVE_BASE": self.reference,
+                    "PREFER_DATES_FROM": "past"
+                }
+            elif keyword == "till" or keyword == "after":  # "after"
+            # "after" could be future dates
+                relative_settings = {
+                "RELATIVE_BASE": self.reference,  
+                "PREFER_DATES_FROM": "future"
+                }
+            else:
+                relative_settings = self.settings
+
+            parsed_date = dateparser.parse(remaining_text, settings=relative_settings)
+            if parsed_date:
+                return (parsed_date.date().isoformat(), None)
+            # If that fails, try with past preference
+            # relative_settings["PREFER_DATES_FROM"] = "past"
+            # parsed_date = dateparser.parse(remaining_text, settings=relative_settings)
+            # print(f"[DEBUG] dateparser.parse with past preference result: {parsed_date}")
+    
+            # if parsed_date:
+            #     return (parsed_date.date().isoformat(), None)
 
         # Open-ended "before"
         before_match = re.search(r'before\s+', text)  
@@ -237,10 +257,10 @@ class DateParser:
 # # # Example usage
 if __name__ == "__main__":
     dp = DateParser()
-    # print(dp.extract_all_dates("code review metting since 3 days"))
-    print(dp.parse("emails from sarah to anna after next monday"))
-    # print(dp.parse("emails before April 2025"))
-    # print(dp.extract_all_dates("find meetings from last week and interviews next Monday"))
+    print(dp.extract_all_dates("code review metting since 10 days"))
+#     print(dp.extract_all_dates("emails from sarah to anna till next monday"))
+    print(dp.parse("emails before september 2025"))
+#     print(dp.extract_all_dates("find meetings from last week and  next Monday"))
 
 
 # import warnings
